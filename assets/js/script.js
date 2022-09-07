@@ -12,10 +12,29 @@ function drawBackgroundLine() {
     ctx.beginPath();
     ctx.moveTo(0,400);
     ctx.lineTo(600,400);
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 1.9;
     ctx.strokeStyle = "black";
     ctx.stroke();
 }
+
+//Create player class
+class Player {
+    constructor(x,y,size,color){
+        this.x=x;
+        this.y=y;
+        this.size=size;
+        this.color=color;
+    }
+
+    //Draw function renders player to canvas
+    draw() {
+        ctx.fillstyle = this.color;
+        ctx.fillRect(this.x,this.y,this.size,this.size);
+    }
+}
+
+//Initialise instance of player class
+let player = new Player(150,350,50,"blue");
 
 //Animate function updates canvas to create illusion of movement
 function animate() {
@@ -27,3 +46,5 @@ function animate() {
 }
 
 animate();
+
+
