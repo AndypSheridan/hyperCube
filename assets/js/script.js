@@ -70,7 +70,7 @@ class Player {
                 //Come back down
                 this.y += this.jumpHeight;
             }
-
+            this.rotation();
             //End the cycle
             if(this.jumpCounter >= 32){
                 this.shouldJump = false;
