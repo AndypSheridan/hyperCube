@@ -37,6 +37,12 @@ class Player {
     rotation() {
         let offsetXPosition = this.x + (this.size / 2);
         let offsetYPosition = this.y + (this.size / 2);
+        ctx.translate(offsetXPosition,offsetYPosition);
+        //Division is there to convert degrees into radians
+        ctx.rotate(this.spinIncrement * Math.PI / 180);
+        ctx.translate(-offsetXPosition,-offsetYPosition);
+        //4.5 because 90 /20 (number of iterations in jump) is 4.5
+        this.spin += this.spinIncrement;
     }
 
     /*
