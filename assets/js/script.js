@@ -24,10 +24,39 @@ class Player {
         this.y=y;
         this.size=size;
         this.color=color;
+        //Jump configuration
+        this.jumpHeight = 12;
+        this.shouldJump = false;
+        this.jumpCounter = 0;
+    }
+
+    /*
+    *Create jump animation
+    *14 frames up, 4 frames stationary, 14 frames down
+    */
+    jump() {
+        if(this.shouldJump){
+            this.jumpCounter++;
+            if(this.jumpCounter < 15){
+                //Go up
+                this.y -= this.jumpHeight;
+            }else if(this.jumpCounter > 14 && this.jumpCounter < 19){
+                this.y += 0;
+            }else if(this.jumpCounter < 33){
+                //Come back down
+                this.y += this.jumpHeight;
+            }
+
+            //End the cycle
+            if(this.jumpCounter >= 32){
+                this.shouldJump = false;
+            }
+        }
     }
 
     //Draw function renders player to canvas
     draw() {
+        this.jump();
         ctx.fillstyle = this.color;
         ctx.fillRect(this.x,this.y,this.size,this.size);
     }
