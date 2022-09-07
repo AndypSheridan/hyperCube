@@ -34,7 +34,7 @@ class Player {
 }
 
 //Initialise instance of player class
-let player = new Player(150,350,50,"blue");
+let player = new Player(150,350,50,"black");
 
 //Animate function updates canvas to create illusion of movement
 function animate() {
