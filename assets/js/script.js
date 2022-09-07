@@ -45,6 +45,15 @@ class Player {
         this.spin += this.spinIncrement;
     }
 
+    counterRotation() {
+        //This rotates the cube back to its origin so that it can be moved upwards properly
+        let offsetXPosition = this.x + (this.size / 2);
+        let offsetYPosition = this.y + (this.size / 2);
+        ctx.translate(offsetXPosition,offsetYPosition);
+        ctx.rotate(-this.spin * Math.PI / 180);
+        ctx.translate(-offsetXPosition,-offsetYPosition);
+    }
+
     /*
     *Create jump animation
     *14 frames up, 4 frames stationary, 14 frames down
