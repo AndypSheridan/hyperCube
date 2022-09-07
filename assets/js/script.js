@@ -16,3 +16,14 @@ function drawBackgroundLine() {
     ctx.strokeStyle = "black";
     ctx.stroke();
 }
+
+//Animate function updates canvas to create illusion of movement
+function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    //Canvas Logic
+    drawBackgroundLine();
+}
+
+animate();
