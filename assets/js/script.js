@@ -28,6 +28,15 @@ class Player {
         this.jumpHeight = 12;
         this.shouldJump = false;
         this.jumpCounter = 0;
+        //Related to spin animation
+        this.spin = 0;
+        //Get a perfect 90 degree rotation
+        this.spinIncrement = 90 / 32;
+    }
+
+    rotation() {
+        let offsetXPosition = this.x + (this.size / 2);
+        let offsetYPosition = this.y + (this.size / 2);
     }
 
     /*
