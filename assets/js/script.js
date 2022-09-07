@@ -78,4 +78,13 @@ function animate() {
 
 animate();
 
-
+//Event Listeners
+addEventListener("keydown", e => {
+    if(e.code === "Space"){
+        if(!player.shouldJump){
+            jumpSFX.play();
+            player.jumpCounter = 0;
+            player.shouldJump = true;
+        }
+    }
+})
