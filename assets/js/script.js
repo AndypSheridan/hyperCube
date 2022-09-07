@@ -43,6 +43,8 @@ function animate() {
 
     //Canvas Logic
     drawBackgroundLine();
+    //Foreground
+    player.draw();
 }
 
 animate();
