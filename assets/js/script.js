@@ -159,6 +159,9 @@ function animate() {
 }
 
 animate();
+setTimeout(() => {
+    generateBlocks();
+}, randomNumberInterval(presetTime))
 
 //Event Listeners
 addEventListener("keydown", e => {
