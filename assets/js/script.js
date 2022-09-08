@@ -151,6 +151,12 @@ function squaresColliding(player, block){
     s2.size = s2.size - 10;
     s2.x = s2.x + 10;
     s2.y = s2.y + 10;
+    return !(
+        s1.x>s2.x+s2.size || //S1 is to the right of S2
+        s1.x+s1.size<s2.x || //S1 is to the left of S2
+        s1.y>s2.y+s2.size || //S1 is below S2
+        s1.y+s1.size<s2.y //S1 is above S2
+    )
 }
 
 //Animate function updates canvas to create illusion of movement
