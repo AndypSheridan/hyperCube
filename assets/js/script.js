@@ -107,6 +107,10 @@ class AvoidBlock {
         ctx.fillStyle = this.color:
         ctx.fillRect(this.x,this.y,this.size,this.size);
     }
+    slide() {
+        this.draw();
+        this.x -= this.slideSpeed;
+    }
 }
 
 //Animate function updates canvas to create illusion of movement
