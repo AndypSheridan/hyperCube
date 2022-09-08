@@ -20,14 +20,15 @@ function drawBackgroundLine() {
 //Create player class
 class Player {
     constructor(x,y,size,color){
-        this.x=x;
-        this.y=y;
-        this.size=size;
-        this.color=color;
+        this.x = x;
+        this.y = y;
+        this.size = size;
+        this.color = color;
         //Jump configuration
         this.jumpHeight = 12;
         this.shouldJump = false;
         this.jumpCounter = 0;
+        this.jumpUp = true;
         //Related to spin animation
         this.spin = 0;
         //Get a perfect 90 degree rotation
@@ -39,6 +40,7 @@ class Player {
         let offsetYPosition = this.y + (this.size / 2);
         ctx.translate(offsetXPosition,offsetYPosition);
         //Division is there to convert degrees into radians
+        ctx.rotate(this.spin * Math.PI / 180);
         ctx.rotate(this.spinIncrement * Math.PI / 180);
         ctx.translate(-offsetXPosition,-offsetYPosition);
         //4.5 because 90 /20 (number of iterations in jump) is 4.5
@@ -73,6 +75,8 @@ class Player {
             this.rotation();
             //End the cycle
             if(this.jumpCounter >= 32){
+                this.counterRotation();
+                this.spin = 0;
                 this.shouldJump = false;
             }
         }
@@ -83,6 +87,8 @@ class Player {
         this.jump();
         ctx.fillstyle = this.color;
         ctx.fillRect(this.x,this.y,this.size,this.size);
+        //Reset the rotation so the rotation of other elements is unchanged
+        if(this.shouldJump) this.counterRotation();
     }
 }
 
