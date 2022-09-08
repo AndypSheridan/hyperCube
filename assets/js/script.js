@@ -14,6 +14,8 @@ let enemySpeed = 5;
 let score = 0;
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
+//So cube doesn't score more than one point at a time!
+let canScore = true;
 
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
