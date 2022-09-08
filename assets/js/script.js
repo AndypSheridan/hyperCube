@@ -199,6 +199,13 @@ function animate() {
 
             cancelAnimationFrame(animationId);
         }
+        //User should score a point if this is the case
+        if(isPastBlock(player, arrayBlock) && canScore){
+            canScore = false;
+            scoreSFX.currentTime = 0;
+            scoreSFX.play();
+            score++;
+        }
         //Delete block that has left the screen
         if((arrayBlock.x + arrayBlock.size) <= 0){
             setTimeout(() => {
