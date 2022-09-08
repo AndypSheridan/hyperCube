@@ -212,6 +212,7 @@ addEventListener("keydown", e => {
             jumpSFX.play();
             player.jumpCounter = 0;
             player.shouldJump = true;
+            canScore = true;
         }
     }
 })
