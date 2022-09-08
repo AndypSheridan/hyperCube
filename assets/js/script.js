@@ -21,6 +21,16 @@ let scoreIncrement = 0;
 //So cube doesn't score more than one point at a time!
 let canScore = true;
 
+function startGame() {
+    player = new Player(150,350,50,"black");
+    arrayBlocks = [];
+    score = 0;
+    scoreIncrement = 0;
+    enemySpeed = 5;
+    canScore = true;
+    presetTime = 1000;
+}
+
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
     ctx.beginPath();
