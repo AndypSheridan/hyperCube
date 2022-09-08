@@ -153,7 +153,7 @@ function animate() {
     //Foreground
     player.draw();
 
-    arrayBlocks.forEach(arrayBlock => {
+    arrayBlocks.forEach((arrayBlock, index) => {
         arrayBlock.slide();
     })
 }
