@@ -31,6 +31,14 @@ function startGame() {
     presetTime = 1000;
 }
 
+//Restart game
+function restartGame(button){
+    card.style.display = "none";
+    button.blur();
+    startGame();
+    requestAnimationFrame(animate);
+}
+
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
     ctx.beginPath();
