@@ -60,3 +60,14 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+
+@keyframes cardIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
