@@ -185,7 +185,7 @@ function shouldIncreaseSpeed() {
     if(scoreIncrement + 10 === score){
         scoreIncrement = score;
         enemySpeed++;
-
+        presetTime >= 100 ? presetTime -= 100 : presetTime = presetTime / 2;
         //Update speed of existing blocks
         arrayBlocks.forEach(block => {
             block.slideSpeed = enemySpeed;
@@ -203,6 +203,9 @@ function animate() {
     drawScore();
     //Foreground
     player.draw();
+
+    //Check to see if game speed should be increased
+    shouldIncreaseSpeed();
 
     arrayBlocks.forEach((arrayBlock, index) => {
         arrayBlock.slide();
