@@ -216,6 +216,8 @@ function animate() {
         //End game as player and enemy have collided
         if(squaresColliding(player, arrayBlock)){
             gameOverSFX.play();
+            cardScore.textContent = score;
+            card.style.display = "block";
 
             cancelAnimationFrame(animationId);
         }
