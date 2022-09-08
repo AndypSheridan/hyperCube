@@ -9,6 +9,8 @@ let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 
 //Used for 'setInterval'
 let presetTime = 1000;
+//Blocks can speed up when player has scored points at intervals of 10
+let enemySpeed = 5;
 
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
@@ -23,6 +25,16 @@ function drawBackgroundLine() {
 //Both Min and Max are included in this random generation function
 function getRandomNumber(min,max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomNumberInterval(timeInterval) {
+    let returnTime = timeInterval;
+    if(Math.random() < 0.5) {
+        returnTime += getRandomNumber(presetTime / 3, presetTime * 1.5);
+    }else{
+        returnTime -= getRandomNumber(presetTime / 5, presetTime / 2);
+    }
+    return returnTime;
 }
 
 //Create player class
