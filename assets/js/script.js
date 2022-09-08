@@ -95,6 +95,16 @@ class Player {
 //Initialise instance of player class
 let player = new Player(150,350,50,"black");
 
+class AvoidBlock {
+    constructor(size, speed){
+        this.x = canvas.width + size;
+        this.y = 400 - size;
+        this.size = size;
+        this.color = "red";
+        this.slideSpeed = speed;
+    }
+}
+
 //Animate function updates canvas to create illusion of movement
 function animate() {
     requestAnimationFrame(animate);
