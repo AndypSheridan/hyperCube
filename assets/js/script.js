@@ -147,6 +147,10 @@ function generateBlocks() {
 function squaresColliding(player, block){
     let s1 = Object.assign(Object.create(Object.getPrototypeOf(player)), player);
     let s2 = Object.assign(Object.create(Object.getPrototypeOf(block)), block);
+    //Don't need pixel perfect collision detection
+    s2.size = s2.size - 10;
+    s2.x = s2.x + 10;
+    s2.y = s2.y + 10;
 }
 
 //Animate function updates canvas to create illusion of movement
