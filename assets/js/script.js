@@ -17,6 +17,11 @@ function drawBackgroundLine() {
     ctx.stroke();
 }
 
+//Both Min and Max are included in this random generation function
+function getRandomNumber(min,max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 //Create player class
 class Player {
     constructor(x,y,size,color){
@@ -113,7 +118,7 @@ class AvoidBlock {
     }
 }
 
-let arrayBlocks = [new AvoidBlock(50,5)];
+let arrayBlocks = [];
 
 //Animate function updates canvas to create illusion of movement
 function animate() {
