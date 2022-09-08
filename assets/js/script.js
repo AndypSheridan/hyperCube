@@ -85,7 +85,7 @@ class Player {
     //Draw function renders player to canvas
     draw() {
         this.jump();
-        ctx.fillstyle = this.color;
+        ctx.fillStyle = this.color;
         ctx.fillRect(this.x,this.y,this.size,this.size);
         //Reset the rotation so the rotation of other elements is unchanged
         if(this.shouldJump) this.counterRotation();
@@ -102,6 +102,10 @@ class AvoidBlock {
         this.size = size;
         this.color = "red";
         this.slideSpeed = speed;
+    }
+    draw() {
+        ctx.fillStyle = this.color:
+        ctx.fillRect(this.x,this.y,this.size,this.size);
     }
 }
 
