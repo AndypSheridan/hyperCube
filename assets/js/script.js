@@ -159,6 +159,7 @@ function squaresColliding(player, block){
     )
 }
 
+let animationId = null;
 //Animate function updates canvas to create illusion of movement
 function animate() {
     requestAnimationFrame(animate);
@@ -171,6 +172,12 @@ function animate() {
 
     arrayBlocks.forEach((arrayBlock, index) => {
         arrayBlock.slide();
+        //End game as player and enemy have collided
+        if(squaresColliding(player, arrayBlock)){
+            gameOverSFX.play();
+
+            cancelAnimationFrame(animationId);
+        }
         //Delete block that has left the screen
         if((arrayBlock.x + arrayBlock.size) <= 0){
             setTimeout(() => {
