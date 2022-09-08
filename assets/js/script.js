@@ -155,6 +155,12 @@ function animate() {
 
     arrayBlocks.forEach((arrayBlock, index) => {
         arrayBlock.slide();
+        //Delete block that has left the screen
+        if((arrayBlock.x + arrayBlock.size) <= 0){
+            setTimeout(() => {
+                arrayBlocks.splice(index, 1);
+            }, 0)
+        }
     })
 }
 
