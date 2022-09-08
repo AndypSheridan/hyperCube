@@ -40,6 +40,7 @@ body {
     height: 190px;
     border-radius: 5px;
     animation: cardIn 1s forwards;
+    display: none;
 }
 
 #overlay #card > p {
