@@ -11,6 +11,9 @@ let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 let presetTime = 1000;
 //Blocks can speed up when player has scored points at intervals of 10
 let enemySpeed = 5;
+let score = 0;
+//Used to see if user has scored another 10 points or not
+let scoreIncrement = 0;
 
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
@@ -144,7 +147,7 @@ function generateBlocks() {
 }
 
 //Returns true if colliding
-function squaresColliding(player, block){
+function squaresColliding(player,block){
     let s1 = Object.assign(Object.create(Object.getPrototypeOf(player)), player);
     let s2 = Object.assign(Object.create(Object.getPrototypeOf(block)), block);
     //Don't need pixel perfect collision detection
@@ -162,9 +165,8 @@ function squaresColliding(player, block){
 let animationId = null;
 //Animate function updates canvas to create illusion of movement
 function animate() {
-    requestAnimationFrame(animate);
+    animationId = requestAnimationFrame(animate);
     ctx.clearRect(0,0,canvas.width,canvas.height);
-
     //Canvas Logic
     drawBackgroundLine();
     //Foreground
