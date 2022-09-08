@@ -25,6 +25,14 @@ function drawBackgroundLine() {
     ctx.stroke();
 }
 
+function drawScore() {
+    ctx.font = "80px Arial";
+    ctx.fillStyle = "black";
+    let scoreString = score.toString();
+    let xOffset = ((scoreString.length - 1) * 20);
+    ctx.fillText(scoreString, 280 - xOffset, 100);
+}
+
 //Both Min and Max are included in this random generation function
 function getRandomNumber(min,max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
