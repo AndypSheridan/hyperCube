@@ -143,6 +143,12 @@ function generateBlocks() {
     setTimeout(generateBlocks, timeDelay);
 }
 
+//Returns true if colliding
+function squaresColliding(player, block){
+    let s1 = Object.assign(Object.create(Object.getPrototypeOf(player)), player);
+    let s2 = Object.assign(Object.create(Object.getPrototypeOf(block)), block);
+}
+
 //Animate function updates canvas to create illusion of movement
 function animate() {
     requestAnimationFrame(animate);
