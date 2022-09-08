@@ -137,7 +137,10 @@ let arrayBlocks = [];
 
 //Auto generate blocks
 function generateBlocks() {
+    let timeDelay = randomNumberInterval(presetTime);
     arrayBlocks.push(new AvoidBlock(50, enemySpeed));
+
+    setTimeout(generateBlocks, timeDelay);
 }
 
 //Animate function updates canvas to create illusion of movement
