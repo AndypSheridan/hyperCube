@@ -172,6 +172,14 @@ function squaresColliding(player,block){
     )
 }
 
+//Returns true if player is past the block
+function isPastBlock(player, block) {
+    return(
+        player.x + (player.size / 2) > block.x + (block.size / 4) &&
+        player.x + (player.size / 2) < block.x + (block.size / 4) * 3
+    )
+}
+
 let animationId = null;
 //Animate function updates canvas to create illusion of movement
 function animate() {
