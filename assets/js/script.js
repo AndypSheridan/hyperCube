@@ -135,6 +135,11 @@ class AvoidBlock {
 
 let arrayBlocks = [];
 
+//Auto generate blocks
+function generateBlocks() {
+    arrayBlocks.push(new AvoidBlock(50, enemySpeed));
+}
+
 //Animate function updates canvas to create illusion of movement
 function animate() {
     requestAnimationFrame(animate);
