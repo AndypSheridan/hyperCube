@@ -113,6 +113,8 @@ class AvoidBlock {
     }
 }
 
+let arrayBlocks = [new AvoidBlock(50,5)];
+
 //Animate function updates canvas to create illusion of movement
 function animate() {
     requestAnimationFrame(animate);
@@ -122,6 +124,10 @@ function animate() {
     drawBackgroundLine();
     //Foreground
     player.draw();
+
+    arrayBlocks.forEach(arrayBlock => {
+        arrayBlock.slide();
+    })
 }
 
 animate();
