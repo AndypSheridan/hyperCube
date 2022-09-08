@@ -180,6 +180,19 @@ function isPastBlock(player, block) {
     )
 }
 
+function shouldIncreaseSpeed() {
+    //Check to see if game speed should be increased
+    if(scoreIncrement + 10 === score){
+        scoreIncrement = score;
+        enemySpeed++;
+
+        //Update speed of existing blocks
+        arrayBlocks.forEach(block => {
+            block.slideSpeed = enemySpeed;
+        });
+    }
+}
+
 let animationId = null;
 //Animate function updates canvas to create illusion of movement
 function animate() {
