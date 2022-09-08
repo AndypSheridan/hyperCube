@@ -2,6 +2,10 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+const card = document.getElementById("card");
+const cardScore = document.getElementById("card-score");
+
+
 //Game SFX
 let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
 let gameOverSFX = new Audio("https://archive.org/download/smb_gameover/smb_gameover.wav");
