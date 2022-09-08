@@ -47,3 +47,15 @@ body {
     margin-top: 10px;
     user-select: none;
 }
+
+#overlay #card > button {
+    outline: none;
+    color: #fff;
+    border: none;
+    background-color: #1a8cff;
+    padding: 10px;
+    width: 90%;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
