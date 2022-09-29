@@ -50,8 +50,8 @@ function drawBackgroundLine() {
 }
 
 function drawScore() {
-    ctx.font = "80px Arial";
-    ctx.fillStyle = "black";
+    ctx.font = "64px 'IBM Plex Mono'";
+    ctx.fillStyle = "#DADBD0";
     let scoreString = score.toString();
     let xOffset = ((scoreString.length - 1) * 20);
     ctx.fillText(scoreString, 280 - xOffset, 100);

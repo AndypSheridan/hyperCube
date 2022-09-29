@@ -1,10 +1,10 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
-* {
+/** {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 
 body {
     background: radial-gradient(ellipse at bottom, #758CDE 0%, #0C0D13 100%);
@@ -36,6 +36,7 @@ body {
     align-items: center;
     text-align: center;
     color: #000;
+    font-family: 'IBM Plex Mono' monospace;
 }
 
 #overlay #card {
@@ -51,6 +52,7 @@ body {
     font-size: 32px;
     margin-top: 45x;
     user-select: none;
+    font-family: inherit;
 }
 
 #overlay #card > button {
@@ -62,6 +64,7 @@ body {
     width: 90%;
     font-size: 1rem;
     cursor: pointer;
+    font-family: inherit;
 }
 
 @keyframes cardIn {
