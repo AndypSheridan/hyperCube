@@ -19,6 +19,7 @@ body {
     margin: 0;
 }
 
+/* Styling for game area */
 #canvas {
     background-image: url('../images/desertedplanet1.jpg');
     background-size: cover;
