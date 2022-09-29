@@ -19,8 +19,8 @@ body {
 }
 
 #canvas {
-    border-radius: 5px;
-    background-color: #f0f0f0;
+    background-image: url('../images/desertedplanet1.jpg');
+    background-size: cover;
 }
 
 #overlay {
