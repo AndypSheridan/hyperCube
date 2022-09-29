@@ -34,15 +34,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
     text-align: center;
+    color: #000;
 }
 
 #overlay #card {
-    background-color: #fff;
+    background-color: #DADBD0;
     width: 500px;
     height: 190px;
-    border-radius: 5px;
+    border: 1px solid #000;
     animation: cardIn 1s forwards;
     display: none;
 }
