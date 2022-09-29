@@ -87,7 +87,7 @@ class Player {
         //Related to spin animation
         this.spin = 0;
         //Get a perfect 90 degree rotation
-        this.spinIncrement = 90 / 32;
+        this.spinIncrement = 360 / 32;
     }
 
     rotation() {
