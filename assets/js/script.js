@@ -22,7 +22,7 @@ let scoreIncrement = 0;
 let canScore = true;
 
 function startGame() {
-    player = new Player(150,350,50,"black");
+    player = new Player(150,390,50,"#DADBD0");
     arrayBlocks = [];
     score = 0;
     scoreIncrement = 0;
@@ -42,10 +42,10 @@ function restartGame(button){
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
     ctx.beginPath();
-    ctx.moveTo(0,400);
-    ctx.lineTo(600,400);
-    ctx.lineWidth = 1.9;
-    ctx.strokeStyle = "black";
+    ctx.moveTo(0,440);
+    ctx.lineTo(600,440);
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "transparent";
     ctx.stroke();
 }
 
@@ -148,14 +148,14 @@ class Player {
 }
 
 //Initialise instance of player class
-let player = new Player(150,350,50,"black");
+let player = new Player(150,390,50,"#DADBD0");
 
 class AvoidBlock {
     constructor(size, speed){
         this.x = canvas.width + size;
-        this.y = 400 - size;
+        this.y = 440 - size;
         this.size = size;
-        this.color = "red";
+        this.color = "#000";
         this.slideSpeed = speed;
     }
     draw() {
