@@ -28,7 +28,7 @@ function startGame() {
     scoreIncrement = 0;
     enemySpeed = 5;
     canScore = true;
-    presetTime = 1000;
+    presetTime = 1200;
 }
 
 //Restart game
