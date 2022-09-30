@@ -334,7 +334,7 @@ addEventListener("keydown", e => {
 })
 
 //Touch jump event listener
-addEventListener("touchstart", e => {
+/*addEventListener("touchstart", e => {
     if(e.type === "touchstart"){
         e.preventDefault();
         if(!player.shouldJump){
@@ -344,4 +344,4 @@ addEventListener("touchstart", e => {
             canScore = true;
         }
     }
-});
+});*/
