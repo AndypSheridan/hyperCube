@@ -28,6 +28,14 @@ let downloadTimer = setInterval(function() {
     timeleft -= 1;    
     }, 1000);
 
+//Adds click event listener to skip button on splash screen
+let skipButton = document.getElementById('skip-intro');
+skipButton.addEventListener('click', function(e) {
+    if(e.type === 'click') {
+       splash.style.display = "none";
+    }
+});    
+
 //Game Music
 const myAudio = document.getElementById("myAudio");
 let isPlaying = false;
