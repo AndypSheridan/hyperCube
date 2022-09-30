@@ -586,7 +586,7 @@ body {
 
   /* Media Queries 650px and smaller */
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     #canvas {
       width: 100%;
       object-fit: contain;
