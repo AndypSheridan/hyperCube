@@ -499,4 +499,9 @@ body {
       width: 100%;
       object-fit: contain;
     }
+
+    #card {
+      max-width: max-content;
+      padding: 5%;
+    }
   }
