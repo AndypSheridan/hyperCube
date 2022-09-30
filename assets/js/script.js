@@ -29,8 +29,8 @@ let downloadTimer = setInterval(function() {
     }, 1000);
 
 //Adds click event listener to skip button on splash screen
-let skipButton = document.getElementById('skip-intro');
-skipButton.addEventListener('click', function(e) {
+let skipIntro = document.getElementById('skip-intro');
+skipIntro.addEventListener('click', function(e) {
     if(e.type === 'click') {
        splash.style.display = "none";
     }
