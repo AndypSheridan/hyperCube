@@ -81,6 +81,21 @@ body {
   text-align: center;
 }
 
+#countdown {
+  font-size: 1rem;
+}
+
+#splash-music {
+  bottom: 5%;
+  border: 1px solid #FFF;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #FFF;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
 /* Styling for game area */
 #canvas {
     /* See credits for image author and url*/
