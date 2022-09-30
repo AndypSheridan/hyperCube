@@ -6,6 +6,17 @@ const card = document.getElementById("card");
 const cardScore = document.getElementById("card-score");
 const splashMusic = document.getElementById("splash-music");
 const canvasMusic = document.getElementById("canvas-music");
+const musicButtons = document.getElementsByClassName("musicToggle");
+
+for(let button of musicButtons) {
+    button.addEventListener('touchstart', () => {
+        toggleMusic();
+    })
+
+    button.addEventListener('click', () => {
+        toggleMusic();
+    })
+}
 
 //Target splash screen
 const splash = document.querySelector('.splash');
