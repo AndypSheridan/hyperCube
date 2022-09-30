@@ -14,6 +14,42 @@ body {
     font-family: 'IBM Plex Mono', monospace;
 }
 
+/* Styling for splash screen */
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 200;
+  color: #fff;
+  text-align: center;
+  line-height: 90vh;
+  }
+
+/* Hides splash screen */  
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: -10;
+  color: #fff;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+  }  
+
+/* Fade in animation for splash screen */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}  
+
 /* Styling for game area */
 #canvas {
     /* See credits for image author and url*/
