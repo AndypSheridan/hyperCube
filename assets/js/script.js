@@ -47,11 +47,11 @@ function toggleMusic() {
 
 myAudio.onplaying = function() {
     isPlaying = true;
-}
+};
 
 myAudio.onpause = function() {
     isPlaying = false;
-}
+};
 
 //Game SFX
 let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
@@ -240,7 +240,7 @@ function squaresColliding(player,block){
         s1.x+s1.size<s2.x || //S1 is to the left of S2
         s1.y>s2.y+s2.size || //S1 is below S2
         s1.y+s1.size<s2.y //S1 is above S2
-    )
+    );
 }
 
 //Returns true if player is past the block
@@ -248,7 +248,7 @@ function isPastBlock(player, block) {
     return(
         player.x + (player.size / 2) > block.x + (block.size / 4) &&
         player.x + (player.size / 2) < block.x + (block.size / 4) * 3
-    )
+    );
 }
 
 function shouldIncreaseSpeed() {
@@ -298,15 +298,15 @@ function animate() {
         if((arrayBlock.x + arrayBlock.size) <= 0){
             setTimeout(() => {
                 arrayBlocks.splice(index, 1);
-            }, 0)
+            }, 0);
         }
-    })
+    });
 }
 
 animate();
 setTimeout(() => {
     generateBlocks();
-}, randomNumberInterval(presetTime))
+}, randomNumberInterval(presetTime));
 
 //Event Listeners
 addEventListener("keydown", e => {
