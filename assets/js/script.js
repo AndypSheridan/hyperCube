@@ -9,12 +9,24 @@ const canvasMusic = document.getElementById("canvas-music");
 
 //Target splash screen
 const splash = document.querySelector('splash');
-// This function ets the splash screen to display none after 20s
+// This function sets the splash screen to display none after 20s
 document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
         splash.classList.add('display-none');
     }, 20000);
 });
+
+let timeleft = 20;
+//Creates countdown timer
+let downloadTimer = setInterval(function() {
+    if(timeleft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Finished";
+    } else {
+        document.getElementById("countdown").innerHTML = "Game Starts in " + timeleft;
+    }
+    timeleft -= 1;    
+    }, 1000);
 
 //Game Music
 const myAudio = document.getElementById("myAudio");
