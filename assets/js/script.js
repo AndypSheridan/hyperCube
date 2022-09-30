@@ -94,7 +94,7 @@ function drawBackgroundLine() {
     ctx.strokeStyle = "transparent";
     ctx.stroke();
 }
-
+//Draw score to canvas
 function drawScore() {
     ctx.font = "64px 'IBM Plex Mono'";
     ctx.fillStyle = "#DADBD0";
@@ -132,10 +132,11 @@ class Player {
         this.jumpUp = true;
         //Related to spin animation
         this.spin = 0;
-        //Get a perfect 90 degree rotation
+        //Get a perfect 360 degree rotation
         this.spinIncrement = 360 / 32;
     }
-
+    
+    //Player class rotation
     rotation() {
         let offsetXPosition = this.x + (this.size / 2);
         let offsetYPosition = this.y + (this.size / 2);
@@ -196,6 +197,7 @@ class Player {
 //Initialise instance of player class
 let player = new Player(150,390,50,"#DADBD0");
 
+//Create Obstacle block class
 class AvoidBlock {
     constructor(size, speed){
         this.x = canvas.width + size;
@@ -204,6 +206,7 @@ class AvoidBlock {
         this.color = "#000";
         this.slideSpeed = speed;
     }
+    //Draw blocks to canvas
     draw() {
         ctx.fillStyle = this.color;
         ctx.fillRect(this.x,this.y,this.size,this.size);
