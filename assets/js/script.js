@@ -9,6 +9,12 @@ const canvasMusic = document.getElementById("canvas-music");
 
 //Target splash screen
 const splash = document.querySelector('splash');
+// This function ets the splash screen to display none after 20s
+document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(() => {
+        splash.classList.add('display-none');
+    }, 20000);
+});
 
 //Game Music
 const myAudio = document.getElementById("myAudio");
