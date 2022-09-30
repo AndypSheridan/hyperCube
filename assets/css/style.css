@@ -130,7 +130,7 @@ body {
 #overlay #card {
     background-color: #DADBD0;
     width: 500px;
-    height: 25%;
+    height: 28%;
     border: 1px solid #000;
     animation: cardIn 1s forwards;
     display: none;
