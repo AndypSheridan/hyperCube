@@ -14,7 +14,9 @@ for(let button of musicButtons) {
     })
 
     button.addEventListener('click', () => {
-        toggleMusic();
+        if(!navigator.userAgentData.mobile) {
+            toggleMusic();
+        }
     })
 }
 
