@@ -5,6 +5,22 @@ const ctx = canvas.getContext("2d");
 const card = document.getElementById("card");
 const cardScore = document.getElementById("card-score");
 
+//Game Music
+const myAudio = document.getElementById("myAudio");
+let isPlaying = false;
+
+function toggleMusic() {
+    isPlaying ? myAudio.pause() : myAudio.play();
+}
+
+myAudio.onplaying = function() {
+    isPlaying = true;
+}
+
+myAudio.onpause = function() {
+    isPlaying = false;
+}
+
 
 //Game SFX
 let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
