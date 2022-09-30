@@ -594,6 +594,7 @@ body {
 
     #card {
       max-width: max-content;
+      min-height: fit-content;
       padding: 5%;
     }
 
