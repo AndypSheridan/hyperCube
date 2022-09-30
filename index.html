@@ -10,7 +10,7 @@
     <title>HyperCube</title>
 </head>
 <body>
-  
+  <audio src="/assets/audio/quietskies.wav" id="myAudio" type="audio/wav" loop></audio>
   <div class="stars">
     <div class="star"></div>
     <div class="star"></div>
@@ -68,6 +68,7 @@
     <div id="card">
         <p>Your Score: <span id="card-score">0</span></p>
         <button onclick="restartGame(this)">Start</button>
+        <button id="toggleMusic" onclick="togglePlay()">Toggle Music</button>
     </div>
   </section>  
     <canvas width="600" height="600" id="canvas"></canvas>
