@@ -7,6 +7,9 @@ const cardScore = document.getElementById("card-score");
 const splashMusic = document.getElementById("splash-music");
 const canvasMusic = document.getElementById("canvas-music");
 
+//Target splash screen
+const splash = document.querySelector('splash');
+
 //Game Music
 const myAudio = document.getElementById("myAudio");
 let isPlaying = false;
