@@ -137,10 +137,14 @@ body {
 }
 
 #overlay #card > p {
-    font-size: 32px;
-    margin-top: 45x;
+    font-size: 1rem;
+    margin-top: 10px;
     user-select: none;
     font-family: inherit;
+}
+
+#instructions {
+  font-size: 0.8rem;
 }
 
 #overlay #card > button {
