@@ -8,10 +8,10 @@ const splashMusic = document.getElementById("splash-music");
 const canvasMusic = document.getElementById("canvas-music");
 
 //Target splash screen
-const splash = document.querySelector('splash');
+const splash = document.querySelector('.splash');
 // This function sets the splash screen to display none after 20s
-document.addEventListener('DOMContentLoaded', (e) => {
-    setTimeout(() => {
+document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
         splash.classList.add('display-none');
     }, 20000);
 });
