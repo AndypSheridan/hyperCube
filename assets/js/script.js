@@ -316,3 +316,16 @@ addEventListener("keydown", e => {
         }
     }
 })
+
+//Touch jump event listener
+addEventListener("touchstart", e => {
+    if(e.type === "touchstart"){
+        e.preventDefault();
+        if(!player.shouldJump){
+            jumpSFX.play();
+            player.jumpCounter = 0;
+            player.shouldJump = true;
+            canScore = true;
+        }
+    }
+});

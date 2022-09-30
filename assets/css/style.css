@@ -137,7 +137,7 @@ body {
 }
 
 #overlay #card > p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     user-select: none;
     font-family: inherit;
@@ -602,7 +602,11 @@ body {
       padding: 5%;
     }
 
-    .synopsis{
+    .synopsis {
+      font-size: 0.8rem;
+    }
+
+    #overlay #card > p {
       font-size: 0.8rem;
     }
   }
