@@ -96,6 +96,16 @@ body {
   cursor: pointer;
 }
 
+#skip-intro {
+  border: 1px solid #DADBD0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #FFF;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
 /* Styling for game area */
 #canvas {
     /* See credits for image author and url*/
