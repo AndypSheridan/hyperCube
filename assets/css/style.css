@@ -1,19 +1,6 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
-body {
-    background: radial-gradient(ellipse at bottom, #758CDE 0%, #0C0D13 100%);
-    color: #fff;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: 'IBM Plex Mono', monospace;
-}
-
 /* Styling for splash screen */
 .splash {
   position: fixed;
@@ -42,13 +29,34 @@ body {
   text-align: center;
   line-height: 90vh;
   transition: all 0.5s;
-  }  
+  }    
 
 /* Fade in animation for splash screen */
 .fade-in {
   opacity: 0;
   animation: fadeIn 2s ease-in forwards;
 }  
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #758CDE 0%, #0C0D13 100%);
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
 
 .grid-container {
   display: grid;
@@ -57,6 +65,20 @@ body {
   align-content: space-evenly;
   font-family: inherit;
   background: radial-gradient(ellipse at bottom, #758CDE 0%, #0c0d13 100%);
+}
+
+.title {
+  font-size: 48px;
+}
+
+.synopsis {
+  border: 1px solid #DADBD0;
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* Styling for game area */
