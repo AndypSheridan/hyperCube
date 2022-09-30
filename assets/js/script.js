@@ -9,6 +9,7 @@ const cardScore = document.getElementById("card-score");
 const myAudio = document.getElementById("myAudio");
 let isPlaying = false;
 
+//Create function to toggle music on and off
 function toggleMusic() {
     isPlaying ? myAudio.pause() : myAudio.play();
 }
@@ -20,6 +21,7 @@ myAudio.onplaying = function() {
 myAudio.onpause = function() {
     isPlaying = false;
 }
+
 
 
 //Game SFX
@@ -34,7 +36,7 @@ let enemySpeed = 5;
 let score = 0;
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
-//So cube doesn't score more than one point at a time!
+//So jumping cube doesn't score more than one point at a time!
 let canScore = true;
 
 function startGame() {
