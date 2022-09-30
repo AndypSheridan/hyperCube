@@ -58,7 +58,7 @@ body {
     background-image: linear-gradient(to right, #758CDE, #0C0D13);
     padding: 10px;
     width: 90%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     font-family: inherit;
 }
@@ -72,6 +72,16 @@ body {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+#footer {
+  position: absolute;
+  display: block;
+  bottom: 15%;
+  color: #DADBD0;
+  background: rgba(218, 219, 208, 0.3);
+  padding: 0.2rem;
+  font-size: 0.5rem;
 }
 
 .stars {
