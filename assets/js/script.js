@@ -123,7 +123,7 @@ function checkHighScore(score) {
     }
 }
 
-function saveHighScore (score, highScores) {
+function saveHighScore(score, highScores) {
     const name = prompt('You made the leaderboard! Enter name: ')
     const newScore = {score, name };
     //Add score to list
@@ -138,6 +138,15 @@ function saveHighScore (score, highScores) {
 
 const highScoreList = document.getElementById(HIGH_SCORES);
 highScores.map((score) => `<li>${score.score} - ${score.name}`);
+
+function showHighScores() {
+    const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
+    const highScoreList = document.getElementById(HIGH_SCORES);
+
+    highScoreList.innerHTML = highScores
+    .map((score) => `<li>${score.score} - ${score.name}`)
+    .join('');
+}
 
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
