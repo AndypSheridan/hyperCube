@@ -383,11 +383,5 @@ addEventListener("touchstart", e => {
             player.shouldJump = true;
             canScore = true;
         }
-        if(isPlaying = true) {
-            jumpSFX.play().volume = 0.5;
-        }
-        if(isPlaying = false) {
-            jumpSFX.play().volume = 0;
-        }
     }
 })
