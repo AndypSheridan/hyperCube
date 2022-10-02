@@ -111,6 +111,31 @@ const HIGH_SCORES = "highScores";
 const highScoreString = localStorage.getItem(highScores);
 const highScores = JSON.parse(highScoreString) ?? [];
 
+const lowestScore = highScores[NO_OF_HIGH_SCORES -1]?.score ?? 0;
+
+function checkHighScore(score) {
+    const highScores = JSON.parse(localStorage.getItem(HIGH_SCOORES)) ?? [];
+    const lowestScore = highScores[NO_OF_HIGH_SCORES -1]?.score ?? 0;
+
+    if (score > lowestScore) {
+        saveHighScore(score, highScores); 
+        showHighScores();
+    }
+}
+
+function saveHighScore (score, highScores) {
+    const name = prompt('You made the leaderboard! Enter name: ')
+    const newScore = {score, name };
+    //Add score to list
+    highScores.push(newScore);
+    //Sort the list
+    highScores.sort((a, b) => b.score - a.score);
+    //Select new list
+    highScores.splice(NO_OF_HIGH_SCORES);
+    //Save to local storage
+    localStorage.setItem(HIGH_SCORES, JSON.stringify(highScores));
+}
+
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
     ctx.beginPath();
@@ -310,6 +335,7 @@ function animate() {
         if(squaresColliding(player, arrayBlock)){
             cardScore.textContent = score;
             card.style.display = "block";
+            checkHighScore(account.store);
 
             cancelAnimationFrame(animationId);
         }
