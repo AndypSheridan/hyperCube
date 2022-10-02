@@ -81,7 +81,8 @@ let presetTime = 1000;
 //Blocks can speed up when player has scored points at intervals of 10
 let enemySpeed = 5;
 let score = 0;
-let highscore = 0;
+let highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+let scoreList = document.querySelector('.scoretable');
 
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
