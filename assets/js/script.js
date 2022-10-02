@@ -136,6 +136,9 @@ function saveHighScore (score, highScores) {
     localStorage.setItem(HIGH_SCORES, JSON.stringify(highScores));
 }
 
+const highScoreList = document.getElementById(HIGH_SCORES);
+highScores.map((score) => `<li>${score.score} - ${score.name}`);
+
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
     ctx.beginPath();
