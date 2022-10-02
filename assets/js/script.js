@@ -84,6 +84,12 @@ let score = 0;
 let highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 let scoreList = document.querySelector('.scoretable');
 
+function populateTable() {
+    scoreList.innerHTML = highscores.map((row) => {
+      return `<tr><td>${row.clicker}</td><td>${row.score}</tr>`;
+    }).join('');
+  }
+
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
 //So jumping cube doesn't score more than one point at a time!
