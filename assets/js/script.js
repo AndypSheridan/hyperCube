@@ -107,6 +107,12 @@ function checkScore() {
       localStorage.setItem('highscores', JSON.stringify(highscores));
 }  
 
+function clearScores() {
+    highscores.splice(0, highscores.length);
+    localStorage.setItem('highscores', JSON.stringify(highscores));
+    populateTable();
+  }
+
 
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
