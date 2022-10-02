@@ -384,4 +384,4 @@ addEventListener("touchstart", e => {
             canScore = true;
         }
     }
-});
+}), {passive:false};
