@@ -90,6 +90,24 @@ function populateTable() {
     }).join('');
   }
 
+function checkScore() {
+    let worstScore = 0;
+    if (highscores.length > 4) {
+      worstScore = highscores[highscores.length - 1].score;
+    }
+    if (score > worstScore) {
+        const clicker = window.prompt(`${score} – Top score! What's your name?`);
+        highscores.push({score, clicker});
+    }
+    highscores.sort((a, b) => a.score > b.score ? -1 : 1);
+    if (highscores.length > 5) {
+        highscores.pop();
+      }
+      populateTable();
+      localStorage.setItem('highscores', JSON.stringify(highscores));
+}  
+
+
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
 //So jumping cube doesn't score more than one point at a time!
@@ -312,6 +330,7 @@ function animate() {
         if(squaresColliding(player, arrayBlock)){
             cardScore.textContent = score;
             card.style.display = "block";
+            checkScore();
 
             cancelAnimationFrame(animationId);
         }
