@@ -81,11 +81,22 @@ let presetTime = 1000;
 //Blocks can speed up when player has scored points at intervals of 10
 let enemySpeed = 5;
 let score = 0;
-let highScore = 0;
-localStorage.setItem("highScore",0);
-if(score > parseInt(localStorage.getItem("highScore"))) {
-    localStorage.setItem("highScore", score);
-    console.log(highScore);
+let highscore = 0;
+function highScore(score) {
+    let saved = 0;
+    try { saved = parseFloat(localStorage.highScore); } catch (e) { saved = 0; }
+    if(!(typeof score === 'undefined')) {
+        try { score = parseFloat(score); } catch (e) { score = 0; }
+        if(score > saved) {
+            saved = score;
+            localStorage.highScore = '' + score;
+        }
+    }
+    if (isNAN(saved)) {
+        saved = 0;
+        localStorage.highScore = '0';
+    }
+    return saved;
 }
 //Used to see if user has scored another 10 points or not
 let scoreIncrement = 0;
