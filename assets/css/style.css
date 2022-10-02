@@ -106,6 +106,13 @@ body {
   cursor: pointer;
 }
 
+#high-scores {
+  position: absolute;
+  top: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #DADBD0;
+}
+
 /* Styling for game area */
 #canvas {
     /* See credits for image author and url*/
