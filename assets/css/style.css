@@ -106,11 +106,26 @@ body {
   cursor: pointer;
 }
 
-#high-scores {
-  position: absolute;
-  top: 0;
+.highscore {
+  position: inherit;
+  color: #000;
+  text-align: center;
   font-family: 'IBM Plex Mono', monospace;
-  color: #DADBD0;
+}
+
+.scoretable {
+  margin: 0 auto;
+}
+
+#clear-scores {
+  outline: none;
+    color: #DADBD0;
+    border: 1px solid #000;
+    background-image: linear-gradient(to right, #758CDE, #0C0D13);
+    padding: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 /* Styling for game area */
@@ -137,10 +152,11 @@ body {
 #overlay #card {
     background-color: #DADBD0;
     width: 500px;
-    height: 28%;
+    height: fit-content;
     border: 1px solid #000;
     animation: cardIn 1s forwards;
     display: none;
+    padding: 1rem;
 }
 
 #overlay #card > p {

@@ -91,18 +91,18 @@
   </div> -->
 
   <section id="overlay">
-    <div class="highscore">
-      <h2>Top 5 hyperCubes</h2>
-      <h3>(on this device)</h3>
-      <button onClick="clearScores()">Clear</button>
-      <table class="scoretable">
-      </table>
-    </div>
+    
     <div id="card">
         <p>Your Score: <span id="card-score">0</span></p>
         <p id="instructions">Press Space or Tap Screen to Jump</p>
         <button onclick="restartGame(this)">Start</button>
         <button id="canvas-music" onclick="toggleMusic(this)">Toggle Music and SFX</button>
+        <div class="highscore">
+          <h2>Top 5 hyperCubes</h2>
+          <button id="clear-scores" onClick="clearScores()">Clear</button>
+          <table class="scoretable">
+          </table>
+        </div>
     </div>
   </section>  
     <canvas width="600" height="600" id="canvas"></canvas>
