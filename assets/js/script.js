@@ -49,6 +49,12 @@ skipIntro.addEventListener('click', function(e) {
     }
 });    
 
+//Game SFX
+let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
+scoreSFX.volume = 0;
+let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
+jumpSFX.volume = 0;
+
 //Game Music
 const myAudio = document.getElementById("myAudio");
 let isPlaying = false;
@@ -69,12 +75,6 @@ myAudio.onpause = function() {
     scoreSFX.volume = 0;
     jumpSFX.volume = 0;
 };
-
-//Game SFX
-let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
-scoreSFX.volume = 0;
-let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
-jumpSFX.volume = 0;
 
 //Used for 'setInterval'
 let presetTime = 1000;
