@@ -76,8 +76,6 @@ scoreSFX.volume = 0;
 let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 jumpSFX.volume = 0;
 
-
-
 //Used for 'setInterval'
 let presetTime = 1000;
 //Blocks can speed up when player has scored points at intervals of 10
@@ -105,6 +103,13 @@ function restartGame(button){
     startGame();
     requestAnimationFrame(animate);
 }
+
+//High scores
+const NO_OF_HIGH_SCORES = 10;
+const HIGH_SCORES = "highScores";
+
+const highScoreString = localStorage.getItem(highScores);
+const highScores = JSON.parse(highScoreString) ?? [];
 
 //Create horizontal line across width of canvas
 function drawBackgroundLine() {
