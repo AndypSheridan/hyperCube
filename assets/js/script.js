@@ -60,15 +60,23 @@ function toggleMusic() {
 
 myAudio.onplaying = function() {
     isPlaying = true;
+    scoreSFX.volume = 0.5;
+    jumpSFX.volume = 0.5;
 };
 
 myAudio.onpause = function() {
     isPlaying = false;
+    scoreSFX.volume = 0;
+    jumpSFX.volume = 0;
 };
 
 //Game SFX
 let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
+scoreSFX.volume = 0;
 let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
+jumpSFX.volume = 0;
+
+
 
 //Used for 'setInterval'
 let presetTime = 1000;
