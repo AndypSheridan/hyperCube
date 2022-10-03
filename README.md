@@ -255,21 +255,22 @@ The following bugs were identified during user testing:
 
 <br>
 
-* 🐞 - The original SCSS background worked well on my MacBook Pro but caused huge lag and unplayable game quality on some devices.
+* 🐞 - The original SCSS background worked well on a MacBook Pro but caused huge lag and unplayable game quality on some devices.
 * ⚒️ - The SCSS was too CPU intensive on some devices.
 * ✅ - I used a different background animation which was more subtle but works on all devices in testing.
 
 <br>
 
-* 🐞 - 
-* ⚒️ - The site had not been assigned a favicon.
-* ✅ - I created a separate logo, using an enlarged version of the tennis ball icon from the original design and added a link within the HTML on each page so this logo would display on the browser tab.
+* 🐞 - The game was initially too hard.
+* ⚒️ - The speed of each block was too fast.
+* ✅ - Slowed the starting speed of the blocks and set them to move incrementally faster.
 
 <br>
 
 ## **Unfixed Bugs**
 
-* There are no known unfixed bugs at this stage but this section has been added to catalogue instances of future bugs.
+* There is an issue on mobile devices in which the sound will sometimes play regardless of the toggle button being tapped.
+* 
 
 
 ## **Deployment**
