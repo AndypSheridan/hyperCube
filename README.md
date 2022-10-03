@@ -170,25 +170,18 @@ The game page uses the same radial gradient but there is animated effect of star
 
 <br>
 
-#### **Contact Form Page**
-
-![Screenshot of contact form](docs/images/form1.png)
-
-![Screenshot of address and map](docs/images/form2.png)
-
-* The contact page features a background image of an elderly gentleman playing tennis. There is a significant amount of green in this image which fits well with the chosen colour scheme. On top of the image and positioned to the left of the page is a contact form which features a name input, date of birth input, email input, radio buttons, checkboxes, a dropdown menu and a submit button. The purpose of the form is to give the user an opportunity to contact the academy and provide information about which type of coaching they are interested in, as well as to specify their own previous playing experience, if any. The colours are consistent throughout using those which are used across the site as a whole.
-
-* The next section features the academy's address placed next to a map showing its location. I have used the same gradient background on the headings and on smaller screens the two divs will sit on top of ecah other.
 ​
 ## **Future-Enhancements**
 ​
-There are a number of improvements the business would like implemented going forward:
+There are a various areas with scope for future improvement. This project has been fun and challenging and I will continue to try to add the following features in my own time:
 ​
-* A link allowing the user to call the academy from mobile devices
-* Access to a user account in order to make court bookings or book and pay for sessions with a coach 
-* The ability to view the coaching programme and book on to and pay for courses online
-* A further page with details of team fixtures and how the user can contact the various captains
-* A gallery page showing members and other staff at the facility
+* Creating a sprite and sprite sheet for the player character.
+* Additional sound effects.
+* Add different types of obstacle or enemy.
+* The ability to collect items whilst jumping.
+* Platforms to jump on to.
+* The abiity to collect an item which slows down the obstacles temporarily.
+* The ability to move left and right.
 ​
 ## **Testing Phase**
 ​
