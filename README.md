@@ -57,13 +57,13 @@ There is a high score table which the user can add their name to; it stores the 
 
 ​
 #### **User Stories:**
-* As a user, I want to see what facilities the academy boasts.
-* As a user, I want to learn about the philosophy of the academy.
+* As a user, I want to understand the premise of the game.
+* As a user, I want to quickly learn and understand the rules of the game and its instructions.
 * As a user, I want to navigate the page to find what I require quickly and easily.
-* As a user, I want to learn more about the coaches and what they offer.
-* As a user, I want to reach out and contact the academy.
-* As a user, I want to know how to find the academy.
-* As a user, I want to find and follow the academy on social media.
+* As a user, I want the game to run smoothly and bug-free.
+* As a user, I want to be able to control the music and SFX.
+* As a user, I want to be able to save my score in the leaderboard.
+* As a user, I want to be challenged.
 
 ​
 #### **Site Aims:**
