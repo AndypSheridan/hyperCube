@@ -11,13 +11,13 @@ const musicButtons = document.getElementsByClassName("musicToggle");
 for(let button of musicButtons) {
     button.addEventListener('touchstart', () => {
         toggleMusic();
-    })
+    });
 
     button.addEventListener('click', () => {
         if(!navigator.userAgentData.mobile) {
             toggleMusic();
         }
-    })
+    });
 }
 
 //Target splash screen
@@ -371,7 +371,7 @@ addEventListener("keydown", e => {
             canScore = true;
         }
     }
-})
+});
 
 //Touch jump event listener
 addEventListener("touchstart", e => {
@@ -384,4 +384,4 @@ addEventListener("touchstart", e => {
             canScore = true;
         }
     }
-})
+});
