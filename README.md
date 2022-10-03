@@ -140,25 +140,33 @@ The game page uses the same radial gradient but there is animated effect of star
 
 ![Screenshot of top of splash screen](assets/images/hypercube-splash-screenshot.png)
 
+* The splash screen features a gradient background featuring the colours outlined above.
+* There is an h1 heading featuring the title of the game.
+* The music and SFX button is below the heading. By default, the music and SFX do not play. The button will toggle both.
+* The synopsis is in a bordered div and gives a brief story for the user in order to engage them in the game.
+* Beneath the synopsis is a countdown timer which counts from 20 seconds to zero, giving the user time to read the synopsis and/or toggle the music.
+* FInally, there is a skip button which gives the user the option of skipping the splash screen entirely, either when they are ready or if they have visited the site on multiple occasions.
+* All text is white (#FFF) to offer a contrast to the background and the borders are slightly softer (#DADBD0) to offer a softer contrast.
+
+#### **Game Start Screen** 
 ![Screenshot of start game and leaderboard screen](assets/images/hypercube-game-screenshot.png)
 
-* The h1 heading features a gradient background colour from top left to bottom right using the purple and gray that is prominent throughout the site (outlined in the colours section). The font size reduces depending on the width of the screen it is being viewed on.
-* The main focus of the page is the hero image. This shows two young girls talking by the net on a tennis court. There is an animation which adds a 6 second zoom effect upon the page loading.
-* This image was chosen to fit the Wimbledon-esque colour scheme of the website. The two girls are both smiling which helps to create the image of the academy being a safe and friendly place for children.
-* There is a text-box placed in line with the first girl's line of sight to give the illusion that she is looking towards it. This was designed to draw the user's attention to the box which lists the facilities of the academy. At the bottom of the list is a ink which takes the user to the contact form page.
-* The philosophy section outlines the core beliefs of the academy. The emphasis here is very much on the player and their long-term development being at the centre of everything. It introduces three core principles which are central to the programmes on offer. For consistency, this section features the same gradient background as the h1 heading.
+* Once the splash screen has counted down or been skipped, the game screen presents the user with the game canvas which is partially covered with the overlay card. The card features a start button which starts the game.
+* There is also a toggle music button which works in the same manner as the one on the splash screen. As there will be too little time to adjust these effects during gameplay, it makes most sense to have the button situated here.
+* The card also features the leaderboard which utilises local storage to save the top 5 high scores. The scores will remain in the browser on refresh and restart.
+* The clear button will remove all saved high scores from local storage ready for the table to be populated anew.
+* The background for this screen is a CSS animation which features small stars drifting slowly upwards. It was important to choose a background that wasn't too demanding in terms of processing power as well as one that minimised distraction during gameplay. However, I feel it contributes well to the overall atmosphere and immersion in the game. 
 
-* The programme section elaborates on the core principles of competition, coaching and practice. The important message to convey is that there is more to the academy than just coaching. There is a comprehansive competetition programme involving team events and leagues, singles and doubles and rankings tournaments for all ages and abilities. Practice is also an essential ideology at the academy and players as it is recognised that this is often where a lot of the hard work is done.
-* This section is split into three divs which sit side by side but stack one on top of the other on smaller screens. In the headings for each div I used relevant icons from Font Awesome which help to reinforce what each one is about.
+#### **The Game Itself** 
 
-<br> 
+![Screenshot of game](assets/images/hypercube-gameplay.png)
 
-#### **Team Page** 
-
-![Screenshot of team page](docs/images/team.png)
-* The team page uses the same h1 heading, responsiveness and background gradient as the home page for the purpose of consistency.
-* The main focus of this page are the photos of the three coaches and their corresponding short biographies. Similar to the home page, these are placed side by side but will stack on top of each other when the screen width is reduced. 
-* For consistency purposes, the background color of the bios remains true to the overall color palette of the site overall.
+* Upon start, the player character (the white square) appears to move towards the black 'monoliths'. In terms of the game logic, it is actually only the monoliths that move.
+* The player character jumps through a press of the spacebar or a screen tap on mobile devices.
+* For every 10 blocks that are successfully jumped, the speed of the black monoliths increases.
+* The player scores a point for every obsatcle that is successfully cleared.
+* As it is an endless jumper, the goal is to score the highest on the leaderboard. 
+* If the player achieves a top 5 high score they are prompted to enter their name in the leaderboard.
 
 <br>
 
