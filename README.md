@@ -118,9 +118,9 @@ The game page uses the same radial gradient but there is animated effect of star
 
 * The favicon is a small image that displays in the browser tab. 
 * The intention is to enhance the user experience for those who have multiple tabs open and cannot read the text in the tabs.
-* The favicon is an enlarged version of the tennis ball in the STA logo in the purple shades used across the site.
+* The favicon is a simple lower case 'h' and upper case 'C' to reflect the styling of 'hyperCube' in the title of the game. The font color is the same (#DADBD0) as the one used on the splash and game screens, whilst the purple is found in the game canvas background.
 
-![Screenshot of favicon](docs/images/favicon-screenshot.png)
+![Screenshot of favicon](assets/images/hyperCube-favicon-screenshot.png)
 ​
 #### **Navigation Bar:**
 ​
