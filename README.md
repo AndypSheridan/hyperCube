@@ -104,9 +104,9 @@ The game page uses the same radial gradient but there is animated effect of star
 ​
 #### **Typography**
 ​
-* Throughout the page, the following fonts are used:
-  * Raleway ('https://fonts.googleapis.com/css2?family=Raleway&display=swap') - I had already created a logo which used this font so I wanted to use it throughout the site. I felt that this font offered a clean and modern look which suits the new academy.
-  * Sans serif - As a fallback font in the event Raleway wasn't supported by the browser
+* Throughout the page and game, the following fonts are used:
+  * IBM Plex Mono (Regular 400) ('https://fonts.google.com/specimen/IBM+Plex+Mono?query=IBM+Pl') - This font was chosen to complement the sci-fi feel of the game and site. 
+  * Monospace - As a fallback font in the event IBM Plex Mono wasn't supported by the browser
 ​
 * All fonts were sourced from Google fonts, as stated in the credits.
 
