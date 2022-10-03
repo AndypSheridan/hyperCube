@@ -67,11 +67,11 @@ There is a high score table which the user can add their name to; it stores the 
 
 ​
 #### **Site Aims:**
-* To raise awareness of the new centre and its philosophy.
-* To provide an opportunity for the user to see profiles of the coaching team.
-* To offer the user an oppertunity to get in contact.
-* To provide a contact form the user can complete if they would rather not email or contact via social media.
-* To show the location of the centre via a map and address.
+* To offer a simple yet challenging experience to the user.
+* To provide a clean and simple interface for the user.
+* To offer SFX and music based on the user's choice.
+* To offer the user the option of saving their high score, or to clear the current list.
+* To provide an interesting background to the canvas and game page with minimal distraction.
 
 ​​
 #### **Wireframes:**
