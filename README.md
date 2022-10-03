@@ -299,7 +299,7 @@ The following software was used:
 
 - Gitpod to create, load and push my code to Github.
 - Git (Gitpod and Github) as my version control for the site.
-- .
+- Audacity Desktop to convert and compress my .wav file to mp3.
 - Balsamiq wireframes software.
 ​
 
@@ -310,23 +310,23 @@ The following software was used:
 ​
 ### **Content:**
 
-* The initial JavaScript code was taken from YouTube user 'Well Explained'. To help with the responsive navbar I used code from the following YouTube video: https://www.youtube.com/watch?v=qSp5C0OOMns
-At the time I had no knowledge of JavaScript so used the exact JS code featured in the video. The rest of the header is loosely based on their example but adapted for the needs of the academy.​
+* Elements of the game use code written by YouTube user: Qixotl LFC https://www.youtube.com/watch?v=gnPekEXhkys
 
-Here is the code used:
+* The background CSS is copied from Riley Pearce on CodePen: https://codepen.io/riley-pearce/pen/OJWPjZM?fbclid=IwAR2HwzINeVhFg7-YQvFDV8Teh-IH6akXO9RY3uMTapRobDt-R9fJ6-GIMkY
 
-const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
-const navbarLinks = document.getElementsByClassName('navbar-links');
-toggleButton.addEventListener('click', function() {
-    for(var i=0; i<navbarLinks.length; i++)
-    navbarLinks[i].classList.toggle('active');
-});
+* The background image was found on Freepik. The attribution is on the game screen. 
+The URL is "https://www.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_13924256.htm#query=game%20background&position=12&from_view=keyword"
 
-* The above code resulted in a bug upon reszing of the browser window so Richard Wells helped fix this in our final session on this project.
+* The in-game music is from Christopher at IndieGameMusic.com. 
+Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=5620
+I requested permission to use the track in the game.
 
-* Social media and email icons were taken from https://fontawesome.com/
+* The favicon was generated at https://favicon.io/
 
-* The contact form is loosely based on Code Insitute's Love Running walkthrough project.
+* The in-game sound effects are both from open source digital library https://archive.org/
+Here are the links: 
+Jump SFX: https://archive.org/download/jump_20210424/jump.wav
+Score SFX: https://archive.org/download/classiccoin/classiccoin.wav
 
 
 ### **Media:**
