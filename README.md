@@ -203,21 +203,21 @@ There are a various areas with scope for future improvement. This project has be
 
 **Functionality**
 
-* Each feature was user-tested numerous times. All links were clicked and inages checked.
-* The header is responsive and each of the links and hamburger menu function as desired. 
-* The javascript behaves as expected regardless of the device. 
-* The social media links within the footer all work as expected on all pages, taking the user to the relevant link in a new tab. 
-* The contact link within the cover-text takes the user to the contact page when clicked. 
-* On the contact page the form inputs and validation works as expected. 
-* The Google map on the same page also functions properly. 
+* Each feature was user-tested numerous times. All links were clicked and images checked.
+* On desktop, all buttons and controls function perfectly. The music and SFX toggle on and off as expected. 
+* The javascript functions as expected regardless on desktop. 
+* The skip button fucntions perfectly regardless of the device.
+* The animated background functions well on desktop and mobile.
+* The game runs as expected on desktop and mobile. 
+* The leaderboard functions as intended on desktop and mobile. 
 * I used *Lighthouse* to test each page. Results below:
 
-* [Home page](docs/images/home-lighthouse.png)
-* [Team page](docs/images/team-lighthouse.png)
-* [Contact Form page](docs/images/form-lighthouse.png)
+* ![hyperCube Lighthouse Report Desktop]()
+* ![hyperCube Lighthouse Report Mobile]()
 
 * Each page of the site performs well.
-* The Home and Contact Formm pages each received 100% accessibility scores whilst the Team page achieved a score of 98%.
+* The desktop score performance score is 99% and the mobile score is 85%.
+* The game scores 100% in terms of accessibility, best practices and SEO.
 
 ​
 **Validators**
