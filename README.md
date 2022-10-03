@@ -219,21 +219,17 @@ There are a various areas with scope for future improvement. This project has be
 ​
 **Validators**
 
-* HTML Validation using w3c validator - Each page passed validation
+* HTML Validation using w3c validator -  passed validation
 
-* [Home page](docs/images/home-html-check.png)
-* [Team page](docs/images/team-html-check.png)
-* [Contact Form page](docs/images/form-html-check.png)
+* ![HTML Validation Screenshot](assets/images/hypercube-html-validation.png)
 
-* CSS Validation using w3c jigsaw - Each page passed validation
+* CSS Validation using w3c jigsaw - passed validation
 
-* [Home page](docs/images/home-css-check.png)
-* [Team page](docs/images/team-css-check.png)
-* [Contact Form page](docs/images/form-css-check.png)
+* [Home page](assets/images/hypercube-css-validation.png)
 
-* JavaScript Validation using jShint - Code passed validation
+* JavaScript Validation using jShint - Code passed validation although a number of warnings were flagged like this one: 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
-* [JavaScript code report](docs/images/jshint-report.png)
+* [JavaScript code report](assets/images/hypercube-js-validation.png)
 
 ​
 ​
