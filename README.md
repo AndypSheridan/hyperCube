@@ -91,11 +91,13 @@ Wireframes for each of the different screens were created using Balsamiq. This p
 
 #### **Color Scheme:**
 ​
-I used online palette generator ColorSpace to generate the following:
+For the splash screen I used a radial gradient: radial-gradient(ellipse at bottom, #758CDE 0%, #0C0D13 100%)
+On the game screen I used a pure CSS animation of tiny stars drifting towards the top of the screen (please see credits below)
+The canvas background is of a barren alien landscape (see credits)
 
 <br>
 
-![Colour Palette](docs/images/colors.png)
+
 
 I wanted to evoke similarities to the Wimbledon colours which are purple and green. I found that the purple shades worked very well within the site so chose to substitute the greens for images with significant amounts of green in them. I had to use white #fff in the header to provide suitable contrast to the background image. I used a grey #575359 as a neutral shade which worked well with the other colours across the site. I also used this as the colour for the footer and some of the text. In the form section I used a yellow #e7df49 a) to provide contrast and b) because it was the closest I could get to the colour of a tennis ball.
 
