@@ -122,16 +122,13 @@ The game page uses the same radial gradient but there is animated effect of star
 
 ![Screenshot of favicon](assets/images/hyperCube-favicon-screenshot.png)
 ​
-#### **Navigation Bar:**
+#### **Toggle Music Button:**
 ​
-* The STA logo is present on the left side of the header and the navigation links are aligned to the right. The background image depicts a fetching image of a tennis ball on a court.
-* The user is given links to the home, team and contact pages.
-* Each navigation link features a hover effect too provide visual feedback to the user.
-* Each page features an active link to provide instant feedback to the user as to their location on the site.
-* The header is fully responsive and uniform across all three pages of the site thanks to a flex display.
-* On smaller screens a hamburger menu is provided to ensure mobile users have an optimal experience.
+* On both the splash screen and game screens, there is the option to toggle the music and game sound effects. This gives the user the option of starting the music as soon as the page has loaded. The music is atmospheric and helps to set the scene. If the user would prefer not to start the game with music, then they do not have to interact with the buttons at all but are free to do so later via a button on the canvas screen which performs the same function.
+* The buttons are responsive and respond to touch and mouse clicks.
 
-![Screenshot of header](docs/images/header.png)
+![Screenshot of splash screen button](assets/images/hyperCube-togglemusic-splash.png)
+![Screenshot of game button](assets/images/hypercube-togglemusic-game.png)
 
 ![Screenshot of responsive header](docs/images/header-responsive.png)
 
