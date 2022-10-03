@@ -2,6 +2,8 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+
+//Global variables
 const card = document.getElementById("card");
 const cardScore = document.getElementById("card-score");
 const splashMusic = document.getElementById("splash-music");
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
     }, 20000);
 });
 
+// 20s Countdown on splash screen
 let timeleft = 20;
 //Creates countdown timer
 let downloadTimer = setInterval(function() {
