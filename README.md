@@ -12,7 +12,8 @@ The player jumps by pressing the space bar on devices with a keyboard or by tapp
 
 There is a high score table which the user can add their name to; it stores the top five scores and there is a 'clear button' to remove those from local storage.
 
-![Am I Responsive Screenshot](docs/images/amiresponsive.png)
+![Am I Responsive Screenshot](assets/images/am-i-responsive-spashscreen.png)
+![Am I Responsive Screenshot](assets/images/am-i-responsive-gamescreen.png)
 
 ​
 ## Table of contents:
