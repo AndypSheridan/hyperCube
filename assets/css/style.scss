@@ -1,4 +1,4 @@
-/* @mixin sp-layout {
+@mixin sp-layout {
     @media screen and (max-width: 750px) {
       @content;
     }
@@ -111,4 +111,4 @@
     50% {
       opacity: 0.6;
     }
-  } */
+  }
