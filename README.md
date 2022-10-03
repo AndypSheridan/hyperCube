@@ -76,16 +76,13 @@ There is a high score table which the user can add their name to; it stores the 
 ​​
 #### **Wireframes:**
 
-Wireframes for each page were created using Balsamiq. This process provided a basic but clear outline of how each page would look as well as organising the content.
+Wireframes for each of the different screens were created using Balsamiq. This process provided a basic but clear outline of how each page would look as well as organising the content.
 
-* Home Page
-[Home Page Wireframe](docs/images/home-wireframe.png)
+* Splash Screen
+[Splash Screen Wireframe]()
 
-* Team Page
-[Team Page Wireframe](docs/images/team-wireframe.png)
-
-* Form Page
-[Form Page Wireframe](docs/images/form-wireframe.png)
+* Game Screen
+[Game Screen Wireframe]()
 
 <br>​
 
