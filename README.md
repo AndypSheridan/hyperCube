@@ -1,108 +1,368 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **hyperCube**
+## **Site Overview**
 
-Welcome AndypSheridan,
+hyperCube is an endless, side-scrolling jumping game in which the player has to jump a series of randomly spaced cubes or 'monoliths' that slide towards the player at increasing speed. The synopsis for the game is as follows: 
+"Whilst on a routine patrol at the edge of the galaxy, your hyperdrive malfunctioned, rupturing space and time. You have been pulled into an alternate 2D reality where the rules of our universe no longer apply. After crashing on a deserted world, the mysterious laws of this place have transformed your human body into a hyperCube. Stars drift towards the heavens and menacing black monoliths are drawn towards you with increasing speed. If there is any hope of escape from this place, you have no choice other to first survive by jumping the monoliths."
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The synopsis is displayed on a splash screen which counts down from 20 before showing the game page. Alternatively the user can skip the splash screen using the 'skip' button.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The game has sound effects and music (see credits for details) which can be toggled on or off. The default setting is no sound or music. 
 
-## Gitpod Reminders
+The player jumps by pressing the space bar on devices with a keyboard or by tapping the screen on touch devices.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+There is a high score table which the user can add their name to; it stores the top five scores and there is a 'clear button' to remove those from local storage.
 
-`python3 -m http.server`
+![Am I Responsive Screenshot](docs/images/amiresponsive.png)
 
-A blue button should appear to click: _Make Public_,
+​
+## Table of contents:
+1. [**Site Overview**](#site-overview)
+1. [**Planning stage**](#planning-stage)
+    * [***Target Audiences***](#target-audiences)
+    * [***User Stories***](#user-stories)
+    * [***Site Aims***](#site-aims)
+    * [***Wireframes***](#wireframes)
+    * [***Color Scheme***](#color-scheme)
+    * [***Typography***](#typography)
+1. [**Current Features Common to all pages**](#current-features-common-to-all-pages)
+    * [***Header Element***](#header-element)
+    * [***Other Features***](#features)
+    * [**Footer**](#footer)
+1. [**Individual Page Content features**](#individual-page-content-features)
+    * [**About Page Content**](#about-page-content)
+    * [**Teachings Page Content**](#teachings-page-content)
+    * [**Community Page Content**](#community-page-content)
+    * [**Contact Page Content**](#contact-page-content)
+    * [**Form Feedback Page Content**](#form-feedback-page-content)
+1. [**Future-Enhancements**](#future-enhancements)
+1. [**Testing Phase**](#testing-phase)
+1. [**Deployment**](#deployment)
+1. [**Tech**](#tech)
+1. [**Credits**](#credits)
+    * [**General reference**](#general-reference)
+    * [**Content**](#content)
+    * [**Media**](#media)
+    * [**Honorable mentions**](#honorable-mentions)
+​
+## **Planning Stage**
 
-Another blue button should appear to click: _Open Browser_.
+<br>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### **Target Audiences:**
+* People who are interested in tennis​.
+* Parents looking for somewhere safe and professional their children can train.
+* Adults who wish to develop their tennis or compete at a new, exciting facility.
+* Beginners who are looking for a friendly environment in which to learn the game.
+* High level players looking for a training base between tournaments.
 
-A blue button should appear to click: _Make Public_,
+​
+#### **User Stories:**
+* As a user, I want to see what facilities the academy boasts.
+* As a user, I want to learn about the philosophy of the academy.
+* As a user, I want to navigate the page to find what I require quickly and easily.
+* As a user, I want to learn more about the coaches and what they offer.
+* As a user, I want to reach out and contact the academy.
+* As a user, I want to know how to find the academy.
+* As a user, I want to find and follow the academy on social media.
 
-Another blue button should appear to click: _Open Browser_.
+​
+#### **Site Aims:**
+* To raise awareness of the new centre and its philosophy.
+* To provide an opportunity for the user to see profiles of the coaching team.
+* To offer the user an oppertunity to get in contact.
+* To provide a contact form the user can complete if they would rather not email or contact via social media.
+* To show the location of the centre via a map and address.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+​​
+#### **Wireframes:**
 
-To log into the Heroku toolbelt CLI:
+Wireframes for each page were created using Balsamiq. This process provided a basic but clear outline of how each page would look as well as organising the content.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* Home Page
+[Home Page Wireframe](docs/images/home-wireframe.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Team Page
+[Team Page Wireframe](docs/images/team-wireframe.png)
 
-------
+* Form Page
+[Form Page Wireframe](docs/images/form-wireframe.png)
 
-## Release History
+<br>​
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### **Color Scheme:**
+​
+I used online palette generator ColorSpace to generate the following:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Colour Palette](docs/images/colors.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+I wanted to evoke similarities to the Wimbledon colours which are purple and green. I found that the purple shades worked very well within the site so chose to substitute the greens for images with significant amounts of green in them. I had to use white #fff in the header to provide suitable contrast to the background image. I used a grey #575359 as a neutral shade which worked well with the other colours across the site. I also used this as the colour for the footer and some of the text. In the form section I used a yellow #e7df49 a) to provide contrast and b) because it was the closest I could get to the colour of a tennis ball.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+​
+#### **Typography**
+​
+* Throughout the page, the following fonts are used:
+  * Raleway ('https://fonts.googleapis.com/css2?family=Raleway&display=swap') - I had already created a logo which used this font so I wanted to use it throughout the site. I felt that this font offered a clean and modern look which suits the new academy.
+  * Sans serif - As a fallback font in the event Raleway wasn't supported by the browser
+​
+* All fonts were sourced from Google fonts, as stated in the credits.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+​<br>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## **Current Features Common to all Pages**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### **Favicon**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* The favicon is a small image that displays in the browser tab. 
+* The intention is to enhance the user experience for those who have multiple tabs open and cannot read the text in the tabs.
+* The favicon is an enlarged version of the tennis ball in the STA logo in the purple shades used across the site.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Screenshot of favicon](docs/images/favicon-screenshot.png)
+​
+#### **Navigation Bar:**
+​
+* The STA logo is present on the left side of the header and the navigation links are aligned to the right. The background image depicts a fetching image of a tennis ball on a court.
+* The user is given links to the home, team and contact pages.
+* Each navigation link features a hover effect too provide visual feedback to the user.
+* Each page features an active link to provide instant feedback to the user as to their location on the site.
+* The header is fully responsive and uniform across all three pages of the site thanks to a flex display.
+* On smaller screens a hamburger menu is provided to ensure mobile users have an optimal experience.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Screenshot of header](docs/images/header.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Screenshot of responsive header](docs/images/header-responsive.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### **Footer:**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+* The footer contains social media link and a clickable email link so the user can contact the academy.
+* The footer is responsive and the icons all shrink on smaller screens.
 
-------
+![Screenshot of footer](docs/images/footer.png)
 
-## FAQ about the uptime script
+![Screenshot of responsive footer](docs/images/footer-responsive.png)
+​
 
-**Why have you added this script?**
+## **Features**
+​
+#### **Home Page** 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Screenshot of top of home page](docs/images/home1.png)
 
-**How will this affect me?**
+![Screenshot of bottom of home page](docs/images/home2.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* The h1 heading features a gradient background colour from top left to bottom right using the purple and gray that is prominent throughout the site (outlined in the colours section). The font size reduces depending on the width of the screen it is being viewed on.
+* The main focus of the page is the hero image. This shows two young girls talking by the net on a tennis court. There is an animation which adds a 6 second zoom effect upon the page loading.
+* This image was chosen to fit the Wimbledon-esque colour scheme of the website. The two girls are both smiling which helps to create the image of the academy being a safe and friendly place for children.
+* There is a text-box placed in line with the first girl's line of sight to give the illusion that she is looking towards it. This was designed to draw the user's attention to the box which lists the facilities of the academy. At the bottom of the list is a ink which takes the user to the contact form page.
+* The philosophy section outlines the core beliefs of the academy. The emphasis here is very much on the player and their long-term development being at the centre of everything. It introduces three core principles which are central to the programmes on offer. For consistency, this section features the same gradient background as the h1 heading.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* The programme section elaborates on the core principles of competition, coaching and practice. The important message to convey is that there is more to the academy than just coaching. There is a comprehansive competetition programme involving team events and leagues, singles and doubles and rankings tournaments for all ages and abilities. Practice is also an essential ideology at the academy and players as it is recognised that this is often where a lot of the hard work is done.
+* This section is split into three divs which sit side by side but stack one on top of the other on smaller screens. In the headings for each div I used relevant icons from Font Awesome which help to reinforce what each one is about.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<br> 
 
-**So….?**
+#### **Team Page** 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Screenshot of team page](docs/images/team.png)
+* The team page uses the same h1 heading, responsiveness and background gradient as the home page for the purpose of consistency.
+* The main focus of this page are the photos of the three coaches and their corresponding short biographies. Similar to the home page, these are placed side by side but will stack on top of each other when the screen width is reduced. 
+* For consistency purposes, the background color of the bios remains true to the overall color palette of the site overall.
 
-**Can I opt out?**
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+#### **Contact Form Page**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Screenshot of contact form](docs/images/form1.png)
 
-**Anything more?**
+![Screenshot of address and map](docs/images/form2.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* The contact page features a background image of an elderly gentleman playing tennis. There is a significant amount of green in this image which fits well with the chosen colour scheme. On top of the image and positioned to the left of the page is a contact form which features a name input, date of birth input, email input, radio buttons, checkboxes, a dropdown menu and a submit button. The purpose of the form is to give the user an opportunity to contact the academy and provide information about which type of coaching they are interested in, as well as to specify their own previous playing experience, if any. The colours are consistent throughout using those which are used across the site as a whole.
 
----
+* The next section features the academy's address placed next to a map showing its location. I have used the same gradient background on the headings and on smaller screens the two divs will sit on top of ecah other.
+​
+## **Future-Enhancements**
+​
+There are a number of improvements the business would like implemented going forward:
+​
+* A link allowing the user to call the academy from mobile devices
+* Access to a user account in order to make court bookings or book and pay for sessions with a coach 
+* The ability to view the coaching programme and book on to and pay for courses online
+* A further page with details of team fixtures and how the user can contact the various captains
+* A gallery page showing members and other staff at the facility
+​
+## **Testing Phase**
+​
+**Responsiveness**
 
-Happy coding!
+* Responsiveness was tested extensively using Chrome Dev Tools. This proved invaluable when creating each page and was instrumental in helping me ensure responsiveness on multiple devices and screen sizes. The ability to experiment with the code saved a lot of trial and error within gitpod.
+* User testing was conducted on the following devices: Apple iPhone 12, Apple iPad Air 2021, Apple Macbook Air 2021, Apple iMac 2021. 
+* As I was limited to Apple devices only I sent the link to various friends and colleagues so they could check responsiveness on further devices including Windows desktop PCs, Amazon tablets and Samsung Galaxy S12. In each case, the pages responded as expected.
+
+* **Home Page**
+
+![Screenshot of responsive home page](docs/images/home-responsive.png)
+
+* **Team Page**
+
+![Screenshot of responsive team page](docs/images/team-responsive.png)
+
+* **Contact form page**
+
+![Screenshot of responsive contact form page](docs/images/form-responsive.png)
+​
+
+**Functionality**
+
+* Each feature was user-tested numerous times. All links were clicked and inages checked.
+* The header is responsive and each of the links and hamburger menu function as desired. 
+* The javascript behaves as expected regardless of the device. 
+* The social media links within the footer all work as expected on all pages, taking the user to the relevant link in a new tab. 
+* The contact link within the cover-text takes the user to the contact page when clicked. 
+* On the contact page the form inputs and validation works as expected. 
+* The Google map on the same page also functions properly. 
+* I used *Lighthouse* to test each page. Results below:
+
+* [Home page](docs/images/home-lighthouse.png)
+* [Team page](docs/images/team-lighthouse.png)
+* [Contact Form page](docs/images/form-lighthouse.png)
+
+* Each page of the site performs well.
+* The Home and Contact Formm pages each received 100% accessibility scores whilst the Team page achieved a score of 98%.
+
+​
+**Validators**
+
+* HTML Validation using w3c validator - Each page passed validation
+
+* [Home page](docs/images/home-html-check.png)
+* [Team page](docs/images/team-html-check.png)
+* [Contact Form page](docs/images/form-html-check.png)
+
+* CSS Validation using w3c jigsaw - Each page passed validation
+
+* [Home page](docs/images/home-css-check.png)
+* [Team page](docs/images/team-css-check.png)
+* [Contact Form page](docs/images/form-css-check.png)
+
+* JavaScript Validation using jShint - Code passed validation
+
+* [JavaScript code report](docs/images/jshint-report.png)
+
+​
+​
+## **Bugs**
+​
+The following bugs were identified during user testing:
+
+* 🐞 - When on mobile the team page coach bios failed to align properly.
+* ⚒️ - There was an open div tag in the html code.
+* ✅ - Added the relevant closing tag to make the coach bios respond properly.
+
+<br>
+
+* 🐞 - The contact form contained a bug where it was possible to submit the form without providing a valid email address.
+* ⚒️ - The input type had been set to text.
+* ✅ - Change input type to email so a valid email address was required. The input was re-tested after the bug was fixed and the issue was resolved.
+
+​<br>
+
+* 🐞 - The contact form would not submit unless 'individual coaching' was selected.
+* ⚒️ - The input type had been set to 'required'.
+* ✅ - Remove the required attribute so the user did not have to select this option. This fixed the issue and upon re-testing the user would not have to select this option.
+
+<br>
+
+* 🐞 - A bug was found upon resizing the window after the hamburger menu was opened.
+* ⚒️ - Unless the user manually closed the menu after opening it, it would remain open.
+* ✅ - Change the JS code so the menu would close automatically once the screen width exceeded 600 pixels.
+
+<br>
+
+* 🐞 - Upon loading each page the following error message was displayed in the console: GET https://Andypsheridan.github.io/favicon.ico 404
+* ⚒️ - The site had not been assigned a favicon.
+* ✅ - I created a separate logo, using an enlarged version of the tennis ball icon from the original design and added a link within the HTML on each page so this logo would display on the browser tab.
+
+<br>
+
+## **Unfixed Bugs**
+
+* There are no known unfixed bugs at this stage but this section has been added to catalogue instances of future bugs.
+
+
+## **Deployment**
+I deployed the page on GitHub pages via the following procedure: -
+​
+1. From the project's [repository](pageurl), go to the **Settings** tab.
+2. From the left-hand menu, select the **Pages** tab.
+3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
+4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
+​
+The live site can be found can be found at the following URL - https://andypsheridan.github.io/sta-final/
+
+***
+​
+## **Tech**
+​
+I used the following technologies for the STA project:
+​
+- HTML
+- CSS
+- JavaScript
+
+## **Software**
+
+The following software was used:
+
+- Gitpod to create, load and push my code to Github.
+- Git (Gitpod and Github) as my version control for the site.
+- Adobe Express to create the STA logo.
+- Balsamiq wireframes software.
+​
+
+<br>
+
+
+## **Credits**
+​
+### **Content:**
+
+* The initial JavaScript code was taken from YouTube user 'Well Explained'. To help with the responsive navbar I used code from the following YouTube video: https://www.youtube.com/watch?v=qSp5C0OOMns
+At the time I had no knowledge of JavaScript so used the exact JS code featured in the video. The rest of the header is loosely based on their example but adapted for the needs of the academy.​
+
+Here is the code used:
+
+const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links');
+toggleButton.addEventListener('click', function() {
+    for(var i=0; i<navbarLinks.length; i++)
+    navbarLinks[i].classList.toggle('active');
+});
+
+* The above code resulted in a bug upon reszing of the browser window so Richard Wells helped fix this in our final session on this project.
+
+* Social media and email icons were taken from https://fontawesome.com/
+
+* The contact form is loosely based on Code Insitute's Love Running walkthrough project.
+
+
+### **Media:**
+
+* The STA logo and browser tab icon were created using Adobe Express.
+​
+* The following images were used, all acquired from public domain image site Pexels.com:
+
+* https://images.pexels.com/photos/5069180/pexels-photo-5069180.jpeg?auto=compress&cs=tinysrgb&w=800
+* https://images.pexels.com/photos/1277397/pexels-photo-1277397.jpeg?auto=compress&cs=tinysrgb&w=800
+* https://images.pexels.com/photos/5741044/pexels-photo-5741044.jpeg?auto=compress&cs=tinysrgb&w=800
+* https://images.pexels.com/photos/6292759/pexels-photo-6292759.jpeg?auto=compress&cs=tinysrgb&w=800
+* https://images.pexels.com/photos/8224730/pexels-photo-8224730.jpeg?auto=compress&cs=tinysrgb&w=800
+* https://images.pexels.com/photos/2339377/pexels-photo-2339377.jpeg?auto=compress&cs=tinysrgb&w=800
+
+
+### **Honorable mentions**
+* Thank you to my mentor, Richard Wells, who gave a significant amount of his time to provide me with feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
+* Thanks to the Code Institute community on Slack who helped remind me that everyone has difficult days.
+* A huge thank you to my partner Jess who now knows more about HTML and CSS than she ever wanted to.
+* Finally, thanks to my two boys, Arthur and Elijah, who will be very disappointed when they find out I haven't been working on Mario Kart 9.
