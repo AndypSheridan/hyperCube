@@ -132,24 +132,15 @@ The game page uses the same radial gradient but there is animated effect of star
 
 ![Screenshot of responsive header](docs/images/header-responsive.png)
 
-
-#### **Footer:**
-
-* The footer contains social media link and a clickable email link so the user can contact the academy.
-* The footer is responsive and the icons all shrink on smaller screens.
-
-![Screenshot of footer](docs/images/footer.png)
-
-![Screenshot of responsive footer](docs/images/footer-responsive.png)
 ​
 
 ## **Features**
 ​
-#### **Home Page** 
+#### **Splash Screen** 
 
-![Screenshot of top of home page](docs/images/home1.png)
+![Screenshot of top of splash screen](assets/images/hypercube-splash-screenshot.png)
 
-![Screenshot of bottom of home page](docs/images/home2.png)
+![Screenshot of start game and leaderboard screen](assets/images/hypercube-game-screenshot.png)
 
 * The h1 heading features a gradient background colour from top left to bottom right using the purple and gray that is prominent throughout the site (outlined in the colours section). The font size reduces depending on the width of the screen it is being viewed on.
 * The main focus of the page is the hero image. This shows two young girls talking by the net on a tennis court. There is an animation which adds a 6 second zoom effect upon the page loading.
