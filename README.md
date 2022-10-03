@@ -129,9 +129,6 @@ The game page uses the same radial gradient but there is animated effect of star
 
 ![Screenshot of splash screen button](assets/images/hyperCube-togglemusic-splash.png)
 ![Screenshot of game button](assets/images/hypercube-togglemusic-game.png)
-
-![Screenshot of responsive header](docs/images/header-responsive.png)
-
 ​
 
 ## **Features**
@@ -212,8 +209,8 @@ There are a various areas with scope for future improvement. This project has be
 * The leaderboard functions as intended on desktop and mobile. 
 * I used *Lighthouse* to test each page. Results below:
 
-* ![hyperCube Lighthouse Report Desktop]()
-* ![hyperCube Lighthouse Report Mobile]()
+* ![hyperCube Lighthouse Report Desktop](assets/images/hypercube-lighthouse-desktop.png)
+* ![hyperCube Lighthouse Report Mobile](assets/images/hypercube-lighthouse-mobile.png)
 
 * The page performs well.
 * The desktop score performance score is 99% and the mobile score is 85%.
