@@ -79,10 +79,13 @@ There is a high score table which the user can add their name to; it stores the 
 Wireframes for each of the different screens were created using Balsamiq. This process provided a basic but clear outline of how each page would look as well as organising the content.
 
 * Splash Screen
-[Splash Screen Wireframe]()
+[Splash Screen Wireframe](assets/images/hyperCube-splash-wireframe.png)
 
 * Game Screen
-[Game Screen Wireframe]()
+[Game Screen Wireframe](assets/images/hyperCube-game-wireframe.png)
+
+* Start Game and Leaderboard Card
+[Start Game](assets/images/hyperCube-overlay-card-wireframe.png)
 
 <br>​
 
