@@ -89,7 +89,7 @@ Wireframes for each of the different screens were created using Balsamiq. This p
 
 <br>​
 
-#### **Color Scheme:**
+#### **Colour Scheme:**
 ​
 For the splash screen I used a radial gradient: radial-gradient(ellipse at bottom, #758CDE 0%, #0C0D13 100%)
 On the game screen I used a pure CSS animation of tiny stars drifting towards the top of the screen (please see credits below)
