@@ -227,7 +227,7 @@ There are a various areas with scope for future improvement. This project has be
 
 * [Home page](assets/images/hypercube-css-validation.png)
 
-* JavaScript Validation using jShint - Code passed validation although a number of warnings were flagged like this one: 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+* JavaScript Validation using jShint - Code passed validation although a number of warnings were flagged like this one: 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). After researching online it was found this isn't a problem but I added a .jshintrc file to specify I was using ES6 code.
 
 * [JavaScript code report](assets/images/hypercube-js-validation.png)
 
@@ -237,31 +237,31 @@ There are a various areas with scope for future improvement. This project has be
 ​
 The following bugs were identified during user testing:
 
-* 🐞 - When on mobile the team page coach bios failed to align properly.
-* ⚒️ - There was an open div tag in the html code.
-* ✅ - Added the relevant closing tag to make the coach bios respond properly.
+* 🐞 - At first it was not possible to get the music to play on any device.
+* ⚒️ - I had incorrectly assigned the relevant JS function in my code.
+* ✅ - I changed the function to allow audio playback.
 
 <br>
 
-* 🐞 - The contact form contained a bug where it was possible to submit the form without providing a valid email address.
-* ⚒️ - The input type had been set to text.
-* ✅ - Change input type to email so a valid email address was required. The input was re-tested after the bug was fixed and the issue was resolved.
+* 🐞 - The SFX ran by default on all devices which could be undesirable for many users.
+* ⚒️ - The corresponding JS function specified volume on page load.
+* ✅ - Set the volume to zero until the user clicks or taps the toggle music and SFX button
 
 ​<br>
 
-* 🐞 - The contact form would not submit unless 'individual coaching' was selected.
-* ⚒️ - The input type had been set to 'required'.
-* ✅ - Remove the required attribute so the user did not have to select this option. This fixed the issue and upon re-testing the user would not have to select this option.
+* 🐞 - The game music had a hissing sound which affected the user experience.
+* ⚒️ - I used a .wav file which had become distorted after compression.
+* ✅ - Converted to an .mp3 file which was smaller than the compressed .wav file but sounds fine.
 
 <br>
 
-* 🐞 - A bug was found upon resizing the window after the hamburger menu was opened.
-* ⚒️ - Unless the user manually closed the menu after opening it, it would remain open.
-* ✅ - Change the JS code so the menu would close automatically once the screen width exceeded 600 pixels.
+* 🐞 - The original SCSS background worked well on my MacBook Pro but caused huge lag and unplayable game quality on some devices.
+* ⚒️ - The SCSS was too CPU intensive on some devices.
+* ✅ - I used a different background animation which was more subtle but works on all devices in testing.
 
 <br>
 
-* 🐞 - Upon loading each page the following error message was displayed in the console: GET https://Andypsheridan.github.io/favicon.ico 404
+* 🐞 - 
 * ⚒️ - The site had not been assigned a favicon.
 * ✅ - I created a separate logo, using an enlarged version of the tennis ball icon from the original design and added a link within the HTML on each page so this logo would display on the browser tab.
 
