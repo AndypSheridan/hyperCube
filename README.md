@@ -50,11 +50,10 @@ There is a high score table which the user can add their name to; it stores the 
 <br>
 
 #### **Target Audiences:**
-* People who are interested in tennis​.
-* Parents looking for somewhere safe and professional their children can train.
-* Adults who wish to develop their tennis or compete at a new, exciting facility.
-* Beginners who are looking for a friendly environment in which to learn the game.
-* High level players looking for a training base between tournaments.
+* People who are like casual gaming​.
+* People who are looking for a simple yet challenging endless jumping game.
+* People looking for a browser-based game.
+* Aspiring developers looking for clearly-written JavaScript code and simple but effective logic.
 
 ​
 #### **User Stories:**
