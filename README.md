@@ -162,7 +162,7 @@ The game page uses the same radial gradient but there is animated effect of star
 ![Screenshot of game](assets/images/hypercube-gameplay.png)
 
 * Upon start, the player character (the white square) appears to move towards the black 'monoliths'. In terms of the game logic, it is actually only the monoliths that move.
-* The player character jumps through a press of the spacebar or a screen tap on mobile devices.
+* The player character jumps through a press of the spacebar or a screen tap on mobile devices. Upon jumping the player character executes a perfect 360 degree jump.
 * For every 10 blocks that are successfully jumped, the speed of the black monoliths increases.
 * The player scores a point for every obsatcle that is successfully cleared.
 * As it is an endless jumper, the goal is to score the highest on the leaderboard. 
@@ -308,7 +308,7 @@ The following software was used:
 
 - Gitpod to create, load and push my code to Github.
 - Git (Gitpod and Github) as my version control for the site.
-- Adobe Express to create the STA logo.
+- .
 - Balsamiq wireframes software.
 ​
 
