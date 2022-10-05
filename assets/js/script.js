@@ -18,7 +18,6 @@ let score = 0;
 /**
  * Game SFX
  */
-
 let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
 scoreSFX.volume = 0;
 let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
@@ -28,7 +27,6 @@ jumpSFX.volume = 0;
  * Game Music
  * Toggle music on and off
  */
-
 for(let button of musicButtons) {
     button.addEventListener('touchstart', () => {
         toggleMusic();
@@ -429,7 +427,6 @@ addEventListener("touchstart", e => {
                 scoreSFX.play();
             }
             player.jumpCounter = 0;
-            
         }
     }
 });
