@@ -227,9 +227,9 @@ There are a various areas with scope for future improvement. This project has be
 
 * ![CSS Validation Screenshot](assets/images/hypercube-css-validation.png)
 
-* JavaScript Validation using jShint - Code passed validation 
+* JavaScript Validation using jShint - passed validation. The report stated that there are two unused variables but they are integral to the game and called from the DOM. There are two warnings which refer to ternary expressions.
 
-* ![JavaScript code report](assets/images/hypercube-jshint-es6-report.png)
+* ![JavaScript code report](assets/images/hypercube-jshint-validation.png)
 
 ​
 ​
@@ -269,8 +269,8 @@ The following bugs were identified during user testing:
 
 ## **Unfixed Bugs**
 
-* There is an issue on mobile devices in which the sound will sometimes play regardless of the toggle button being tapped.
-* 
+* There is an issue when running the game in mobile compatibility mode on Dev Tools. The following error is displayed in the console upon simulation of a touch event: Unable to preventDefault inside passive event listener due to target being treated as passive. Although I was able to fix this, when I ran the game on Apple touch devices, the jump function no longer worked so was not a viable solution.
+The bug does not affect the playability or performance of the game or page in any way, but this remains a minor bug for the time being.
 
 
 ## **Deployment**
@@ -291,6 +291,7 @@ I used the following technologies for the STA project:
 ​
 - HTML
 - CSS
+- SCSS
 - JavaScript
 
 ## **Software**

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HyperCube, side-scrolling jump game, kids and adults">
+    <meta name="description" content="hyperCube, side-scrolling jump game, kids and adults">
     <!-- Link to favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.ico">
     <!-- Link to stylesheet-->
@@ -30,15 +30,14 @@
       <button type="button" id="skip-intro" class="fade-in grid-item">Skip</button>
     </div>
   </div>
-
+  <!-- Background stars animation -->
   <div class="bg-animation">
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
     <div id="stars4"></div>
   </div>
-
-  
+  <!-- Overlay section -->
   <section id="overlay">
     <div id="card">
         <p>Your Score: <span id="card-score">0</span></p>
@@ -52,9 +51,11 @@
           <button id="clear-scores" onClick="clearScores()">Clear Top Scores</button>
         </div>
     </div>
+    <!-- Game canvas section -->
   </section>  
     <canvas width="600" height="600" id="canvas"></canvas>
     <div id="footer">
+      <!-- Link to background image on Freepik -->
       <a class="background-credit" href="https://www.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_13924256.htm#query=game%20background&position=12&from_view=keyword">Game Background Image by upklyak</a><span id="image-credit"> on Freepik</span>
     </div>
     <!-- Link to JS file -->
