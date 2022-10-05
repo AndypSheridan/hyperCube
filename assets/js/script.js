@@ -357,6 +357,7 @@ function shouldIncreaseSpeed() {
 }
 
 let animationId = null;
+
 /**
  * Animate function updates canvas to create illusion of movement
  */
