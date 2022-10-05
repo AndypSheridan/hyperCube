@@ -99,8 +99,12 @@ function checkScore() {
       worstScore = highscores[highscores.length - 1].score;
     }
     if (score > worstScore) {
-        const clicker = window.prompt(`${score} – Top score! What's your name?`);
+        let clicker = window.prompt(`${score} – Top score! What's your name?`);
+        if (clicker === null){
+            clicker = "Anonymous";
+        }
         highscores.push({score, clicker});
+        
     }
     highscores.sort((a, b) => a.score > b.score ? -1 : 1);
     if (highscores.length > 5) {
