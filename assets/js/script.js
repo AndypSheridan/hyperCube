@@ -1,19 +1,21 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-const card = document.getElementById("card");
-const cardScore = document.getElementById("card-score");
 const musicButtons = document.getElementsByClassName("musicToggle");
+const cardScore = document.getElementById("card-score");
 const myAudio = document.getElementById("myAudio");
 const splash = document.querySelector('.splash');
-//Used for 'setInterval'
-let presetTime = 1000;
-// 20s Countdown on splash screen
-let timeleft = 20;
-let isPlaying = false;
-let enemySpeed = 5;
-let score = 0;
+const canvas = document.getElementById("canvas");
+const card = document.getElementById("card");
+const ctx = canvas.getContext("2d");
 let highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 let scoreList = document.querySelector('.scoretable');
+let presetTime = 1000;
+let scoreIncrement = 0;
+let isPlaying = false;
+let canScore = true;
+let enemySpeed = 5;
+let timeleft = 20;
+let score = 0;
+
+
 
 // This function sets the splash screen to display-none after 20s
 document.addEventListener('DOMContentLoaded', (e)=>{
@@ -77,16 +79,15 @@ myAudio.onpause = function() {
     jumpSFX.volume = 0;
 };
 
-
-//Blocks can speed up when player has scored points at intervals of 10
-
-
 function populateTable() {
     scoreList.innerHTML = highscores.map((row) => {
       return `<tr><td>${row.clicker}</td><td>${row.score}</tr>`;
     }).join('');
   }
 
+/**
+ * Leaderboard code
+ */  
 function checkScore() {
     let worstScore = 0;
     if (highscores.length > 4) {
@@ -108,6 +109,9 @@ function checkScore() {
       localStorage.setItem('highscores', JSON.stringify(highscores));
 }  
 
+/**
+ * Function to clear leaderboard scores
+ */
 function clearScores() {
     highscores.splice(0, highscores.length);
     localStorage.setItem('highscores', JSON.stringify(highscores));
@@ -115,10 +119,6 @@ function clearScores() {
   }
 
 
-//Used to see if user has scored another 10 points or not
-let scoreIncrement = 0;
-//So jumping cube doesn't score more than one point at a time!
-let canScore = true;
 
 function startGame() {
     player = new Player(150,390,50,"#DADBD0");
