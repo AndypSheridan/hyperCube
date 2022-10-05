@@ -381,12 +381,13 @@ addEventListener("touchstart", e => {
     if(e.type === "touchstart"){
         e.preventDefault();
         if(!player.shouldJump){
+            player.shouldJump = true;
+            canScore = true;
             if (isPlaying) {
                 jumpSFX.play();
             }
             player.jumpCounter = 0;
-            player.shouldJump = true;
-            canScore = true;
+            
         }
     }
 });
