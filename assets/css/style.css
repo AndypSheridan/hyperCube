@@ -113,6 +113,10 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+.highscore h2 {
+  margin-bottom: 0rem;;
+}
+
 .scoretable {
   margin: 0 auto;
   padding: 0.8rem;
