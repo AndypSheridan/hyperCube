@@ -383,7 +383,11 @@ addEventListener("keydown", e => {
 //Touch jump event listener
 addEventListener("touchstart", e => {
     if(e.type === "touchstart"){
-        e.preventDefault();
+        let chromeCheck = navigator.userAgentData.brands.some((v) => v.brand === 'Google Chrome');
+        if(chromeCheck) {
+            e.preventDefault();
+        }
+        
         if(!player.shouldJump){
             player.shouldJump = true;
             canScore = true;
