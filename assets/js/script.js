@@ -385,6 +385,7 @@ addEventListener("touchstart", e => {
             canScore = true;
             if (isPlaying) {
                 jumpSFX.play();
+                scoreSFX.play();
             }
             player.jumpCounter = 0;
             
