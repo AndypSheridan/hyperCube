@@ -69,8 +69,8 @@ function toggleMusic() {
 
 myAudio.onplaying = function() {
     isPlaying = true;
-    scoreSFX.volume = 0.5;
-    jumpSFX.volume = 0.5;
+    scoreSFX.volume = 0.3;
+    jumpSFX.volume = 0.3;
 };
 
 myAudio.onpause = function() {
