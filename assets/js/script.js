@@ -15,43 +15,20 @@ let enemySpeed = 5;
 let timeleft = 20;
 let score = 0;
 
+/**
+ * Game SFX
+ */
 
-
-// This function sets the splash screen to display-none after 20s
-document.addEventListener('DOMContentLoaded', (e)=>{
-    setTimeout(()=>{
-        splash.classList.add('display-none');
-    }, 20000);
-});
-
-
-//Creates countdown timer for splash screen
-let downloadTimer = setInterval(function() {
-    if(timeleft <= 0) {
-        clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "Finished";
-    } else {
-        document.getElementById("countdown").innerHTML = "Game Starts in " + timeleft;
-    }
-    timeleft -= 1;    
-    }, 1000);
-
-//Adds click event listener to skip button on splash screen
-let skipIntro = document.getElementById('skip-intro');
-skipIntro.addEventListener('click', function(e) {
-    if(e.type === 'click') {
-       splash.style.display = "none";
-    }
-});    
-
-//Game SFX
 let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
 scoreSFX.volume = 0;
 let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 jumpSFX.volume = 0;
 
-//Game Music
-//Create function to toggle music on and off
+/**
+ * Game Music
+ * Toggle music on and off
+ */
+
 for(let button of musicButtons) {
     button.addEventListener('touchstart', () => {
         toggleMusic();
@@ -79,11 +56,38 @@ myAudio.onpause = function() {
     jumpSFX.volume = 0;
 };
 
-function populateTable() {
-    scoreList.innerHTML = highscores.map((row) => {
-      return `<tr><td>${row.clicker}</td><td>${row.score}</tr>`;
-    }).join('');
-  }
+/**
+ * Sets the splash screen to display-none after 20s
+ */
+document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+        splash.classList.add('display-none');
+    }, 20000);
+});
+
+/**
+ * Creates countdown timer for splash screen
+ */
+let downloadTimer = setInterval(function() {
+    if(timeleft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Finished";
+    } else {
+        document.getElementById("countdown").innerHTML = "Game Starts in " + timeleft;
+    }
+    timeleft -= 1;    
+    }, 1000);
+
+/**
+ * Adds click event listener to skip button on splash screen
+ */
+let skipIntro = document.getElementById('skip-intro');
+skipIntro.addEventListener('click', function(e) {
+    if(e.type === 'click') {
+       splash.style.display = "none";
+    }
+});    
+
 
 /**
  * Leaderboard code
@@ -110,6 +114,15 @@ function checkScore() {
 }  
 
 /**
+ * Populate high score table
+ */
+function populateTable() {
+    scoreList.innerHTML = highscores.map((row) => {
+      return `<tr><td>${row.clicker}</td><td>${row.score}</tr>`;
+    }).join('');
+  }
+
+/**
  * Function to clear leaderboard scores
  */
 function clearScores() {
@@ -119,7 +132,9 @@ function clearScores() {
   }
 
 
-
+/**
+ *  Starts game
+ */
 function startGame() {
     player = new Player(150,390,50,"#DADBD0");
     arrayBlocks = [];
@@ -130,7 +145,9 @@ function startGame() {
     presetTime = 1200;
 }
 
-//Restart game
+/**
+ * Restarts game - called from DOM
+ */
 function restartGame(button){
     card.style.display = "none";
     button.blur();
@@ -138,7 +155,9 @@ function restartGame(button){
     requestAnimationFrame(animate);
 }
 
-//Create horizontal line across width of canvas
+/**
+ * Creates horizontal line across width of canvas
+ */
 function drawBackgroundLine() {
     ctx.beginPath();
     ctx.moveTo(0,440);
@@ -147,7 +166,9 @@ function drawBackgroundLine() {
     ctx.strokeStyle = "transparent";
     ctx.stroke();
 }
-//Draw score to canvas
+/**
+ * Draws score to canvas
+ */
 function drawScore() {
     ctx.font = "64px 'IBM Plex Mono'";
     ctx.fillStyle = "#DADBD0";
@@ -156,11 +177,16 @@ function drawScore() {
     ctx.fillText(scoreString, 280 - xOffset, 100);
 }
 
-//Both Min and Max are included in this random generation function
+/**
+ * Generates random numbers
+ */
 function getRandomNumber(min,max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/**
+ * Sets random interval for obstacles
+ */
 function randomNumberInterval(timeInterval) {
     let returnTime = timeInterval;
     if(Math.random() < 0.5) {
@@ -171,7 +197,9 @@ function randomNumberInterval(timeInterval) {
     return returnTime;
 }
 
-//Create player class
+/**
+ * Creates player class
+ */
 class Player {
     constructor(x,y,size,color){
         this.x = x;
@@ -189,7 +217,6 @@ class Player {
         this.spinIncrement = 360 / 32;
     }
     
-    //Player class rotation
     rotation() {
         let offsetXPosition = this.x + (this.size / 2);
         let offsetYPosition = this.y + (this.size / 2);
@@ -237,7 +264,9 @@ class Player {
         }
     }
 
-    //Draw function renders player to canvas
+    /**
+     * Draw function renders player to canvas
+     */
     draw() {
         this.jump();
         ctx.fillStyle = this.color;
@@ -247,10 +276,14 @@ class Player {
     }
 }
 
-//Initialise instance of player class
+/**
+ * Initialises instance of player class
+ */
 let player = new Player(150,390,50,"#DADBD0");
 
-//Create Obstacle block class
+/**
+ * Create obstacle class
+ */
 class AvoidBlock {
     constructor(size, speed){
         this.x = canvas.width + size;
@@ -272,7 +305,9 @@ class AvoidBlock {
 
 let arrayBlocks = [];
 
-//Auto generate blocks
+/**
+ * Auto generates blocks
+ */
 function generateBlocks() {
     let timeDelay = randomNumberInterval(presetTime);
     arrayBlocks.push(new AvoidBlock(50, enemySpeed));
@@ -280,7 +315,9 @@ function generateBlocks() {
     setTimeout(generateBlocks, timeDelay);
 }
 
-//Returns true if colliding
+/**
+ * Collision detection
+ */
 function squaresColliding(player,block){
     let s1 = Object.assign(Object.create(Object.getPrototypeOf(player)), player);
     let s2 = Object.assign(Object.create(Object.getPrototypeOf(block)), block);
@@ -296,7 +333,9 @@ function squaresColliding(player,block){
     );
 }
 
-//Returns true if player is past the block
+/**
+ * Determines if player is past the block
+ */
 function isPastBlock(player, block) {
     return(
         player.x + (player.size / 2) > block.x + (block.size / 4) &&
@@ -318,7 +357,9 @@ function shouldIncreaseSpeed() {
 }
 
 let animationId = null;
-//Animate function updates canvas to create illusion of movement
+/**
+ * Animate function updates canvas to create illusion of movement
+ */
 function animate() {
     animationId = requestAnimationFrame(animate);
     ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -362,7 +403,9 @@ setTimeout(() => {
     generateBlocks();
 }, randomNumberInterval(presetTime));
 
-//Event Listeners
+/**
+ * Event listeners
+ */
 addEventListener("keydown", e => {
     if(e.code === "Space"){
         if(!player.shouldJump){
@@ -374,7 +417,6 @@ addEventListener("keydown", e => {
     }
 });
 
-//Touch jump event listener
 addEventListener("touchstart", e => {
     if(e.type === "touchstart"){
         e.preventDefault();
