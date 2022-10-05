@@ -229,7 +229,7 @@ There are a various areas with scope for future improvement. This project has be
 
 * JavaScript Validation using jShint - Code passed validation although a number of warnings were flagged like this one: 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). After researching online it was found this isn't a problem but I added a .jshintrc file to specify I was using ES6 code.
 
-* [JavaScript code report](assets/images/hypercube-js-validation.png)
+* ![JavaScript code report](assets/images/hypercube-jshint-es6-report.png)
 
 ​
 ​
