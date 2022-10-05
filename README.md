@@ -238,8 +238,8 @@ There are a various areas with scope for future improvement. This project has be
 The following bugs were identified during user testing:
 
 * 🐞 - At first it was not possible to get the music to play on any device.
-* ⚒️ - I had incorrectly assigned the relevant JS function in my code.
-* ✅ - I changed the function to allow audio playback.
+* ⚒️ - The file was unplayable when situated in my assets or audio folder.
+* ✅ - I added the audio file to the root directory and it worked.
 
 <br>
 
