@@ -1,37 +1,29 @@
-//Extract context to allow interaction with canvas
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-
-
-//Global variables
 const card = document.getElementById("card");
 const cardScore = document.getElementById("card-score");
 const musicButtons = document.getElementsByClassName("musicToggle");
-
-for(let button of musicButtons) {
-    button.addEventListener('touchstart', () => {
-        toggleMusic();
-    });
-
-    button.addEventListener('click', () => {
-        if(!navigator.userAgentData.mobile) {
-            toggleMusic();
-        }
-    });
-}
-
-//Target splash screen
+const myAudio = document.getElementById("myAudio");
 const splash = document.querySelector('.splash');
-// This function sets the splash screen to display none after 20s
+//Used for 'setInterval'
+let presetTime = 1000;
+// 20s Countdown on splash screen
+let timeleft = 20;
+let isPlaying = false;
+let enemySpeed = 5;
+let score = 0;
+let highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+let scoreList = document.querySelector('.scoretable');
+
+// This function sets the splash screen to display-none after 20s
 document.addEventListener('DOMContentLoaded', (e)=>{
     setTimeout(()=>{
         splash.classList.add('display-none');
     }, 20000);
 });
 
-// 20s Countdown on splash screen
-let timeleft = 20;
-//Creates countdown timer
+
+//Creates countdown timer for splash screen
 let downloadTimer = setInterval(function() {
     if(timeleft <= 0) {
         clearInterval(downloadTimer);
@@ -57,10 +49,18 @@ let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 jumpSFX.volume = 0;
 
 //Game Music
-const myAudio = document.getElementById("myAudio");
-let isPlaying = false;
-
 //Create function to toggle music on and off
+for(let button of musicButtons) {
+    button.addEventListener('touchstart', () => {
+        toggleMusic();
+    });
+
+    button.addEventListener('click', () => {
+        if(!navigator.userAgentData.mobile) {
+            toggleMusic();
+        }
+    });
+}
 function toggleMusic() {
     isPlaying ? myAudio.pause() : myAudio.play();
 }
@@ -77,13 +77,9 @@ myAudio.onpause = function() {
     jumpSFX.volume = 0;
 };
 
-//Used for 'setInterval'
-let presetTime = 1000;
+
 //Blocks can speed up when player has scored points at intervals of 10
-let enemySpeed = 5;
-let score = 0;
-let highscores = JSON.parse(localStorage.getItem("highscores")) || [];
-let scoreList = document.querySelector('.scoretable');
+
 
 function populateTable() {
     scoreList.innerHTML = highscores.map((row) => {
