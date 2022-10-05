@@ -302,6 +302,9 @@ The following software was used:
 - Git (Gitpod and Github) as my version control for the site.
 - Audacity Desktop to convert and compress my .wav file to mp3.
 - Balsamiq wireframes software.
+- JShint online JavaScript code checker https://jshint.com/
+- W3C Markup Validation Service https://validator.w3.org/
+- W3C Jigsaw CSS Validation Service https://jigsaw.w3.org/css-validator/
 ​
 
 <br>
@@ -318,9 +321,8 @@ The following software was used:
 * The background image was found on Freepik. The attribution is on the game screen. 
 The URL is "https://www.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_13924256.htm#query=game%20background&position=12&from_view=keyword"
 
-* The in-game music is from Christopher at IndieGameMusic.com. 
+* The in-game music is freeware from Christopher at IndieGameMusic.com. 
 Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=5620
-I requested permission to use the track in the game.
 
 * The favicon was generated at https://favicon.io/
 
@@ -332,7 +334,7 @@ Score SFX: https://archive.org/download/classiccoin/classiccoin.wav
 
 ### **Media:**
 
-* The STA logo and browser tab icon were created using Adobe Express.
+* 
 ​
 * The following images were used, all acquired from public domain image site Pexels.com:
 
