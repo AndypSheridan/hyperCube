@@ -120,6 +120,7 @@ body {
 .scoretable {
   margin: 0 auto;
   padding: 0.8rem;
+  font-size: 0.8rem;
 }
 
 #clear-scores {
@@ -128,7 +129,7 @@ body {
     border: 1px solid #000;
     background-image: linear-gradient(to right, #758CDE, #0C0D13);
     padding: 10px;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     cursor: pointer;
     font-family: inherit;
 }
