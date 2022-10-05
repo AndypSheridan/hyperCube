@@ -10,7 +10,7 @@ const splashMusic = document.getElementById("splash-music");
 const canvasMusic = document.getElementById("canvas-music");
 const musicButtons = document.getElementsByClassName("musicToggle");
 
-/*for(let button of musicButtons) {
+for(let button of musicButtons) {
     button.addEventListener('touchstart', () => {
         toggleMusic();
     });
@@ -20,7 +20,7 @@ const musicButtons = document.getElementsByClassName("musicToggle");
             toggleMusic();
         }
     });
-}*/
+}
 
 //Target splash screen
 const splash = document.querySelector('.splash');
@@ -99,7 +99,7 @@ function checkScore() {
       worstScore = highscores[highscores.length - 1].score;
     }
     if (score > worstScore) {
-        const clicker = window.prompt(`${score}  is a high score! What's your name?`);
+        const clicker = window.prompt(`${score} – Top score! What's your name?`);
         highscores.push({score, clicker});
     }
     highscores.sort((a, b) => a.score > b.score ? -1 : 1);
@@ -379,14 +379,9 @@ addEventListener("keydown", e => {
 //Touch jump event listener
 addEventListener("touchstart", e => {
     if(e.type === "touchstart"){
-        let chromeCheck = navigator.userAgentData.brands.some((value) => value.brand === "Google Chrome");
-
-        if(!chromeCheck) {
-          e.preventDefault();
-        }
-        
+        e.preventDefault();
         if(!player.shouldJump){
-            if(isPlaying) {
+            if (isPlaying) {
                 jumpSFX.play();
             }
             player.jumpCounter = 0;
