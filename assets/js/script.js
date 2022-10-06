@@ -151,6 +151,7 @@ function restartGame(button){
 
 /**
  * Creates horizontal line across width of canvas
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 function drawBackgroundLine() {
     ctx.beginPath();
@@ -162,6 +163,7 @@ function drawBackgroundLine() {
 }
 /**
  * Draws score to canvas
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 function drawScore() {
     ctx.font = "64px 'IBM Plex Mono'";
@@ -193,6 +195,7 @@ function randomNumberInterval(timeInterval) {
 
 /**
  * Creates player class
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 class Player {
     constructor(x,y,size,color){
@@ -277,6 +280,7 @@ let player = new Player(150,390,50,"#DADBD0");
 
 /**
  * Create obstacle class
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 class AvoidBlock {
     constructor(size, speed){
@@ -311,6 +315,7 @@ function generateBlocks() {
 
 /**
  * Collision detection
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 function squaresColliding(player,block){
     let s1 = Object.assign(Object.create(Object.getPrototypeOf(player)), player);
@@ -329,6 +334,7 @@ function squaresColliding(player,block){
 
 /**
  * Determines if player is past the block
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 function isPastBlock(player, block) {
     return(
@@ -354,6 +360,7 @@ let animationId = null;
 
 /**
  * Animate function updates canvas to create illusion of movement
+ * Code based on tutorial by Qixotl LFC on youtube. Full details in credits in readme.md
  */
 function animate() {
     animationId = requestAnimationFrame(animate);

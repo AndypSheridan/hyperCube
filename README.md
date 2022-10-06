@@ -328,7 +328,7 @@ The following software was used:
 
 * Core elements of the game use code written by YouTube user in the following video: Qixotl LFC https://www.youtube.com/watch?v=gnPekEXhkys
 
-* Whilst the game is now very different, this video gave me a good platform to create a very basic jumping game.
+* Whilst the game is now very different, this video gave me a good platform to create a very basic jumping game. Code has been attributed in the JavaScript file.
 
 
 ### **Media:**
