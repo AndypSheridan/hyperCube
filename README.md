@@ -267,6 +267,12 @@ The following bugs were identified during user testing:
 
 <br>
 
+* 🐞 - The score SFX would not play on loading of the page which was as intended, however upon toggling sound on and off it would continue to play even when the music and jump SFX would be muted.
+* ⚒️ - The score SFX had been tied to intricately to the game itself.
+* ✅ - I had been uncertain about the score SFX and although it worked well on desktop, there was sometimes a lag on certain mobile devices so I removed it altogether.
+
+<br>
+
 ## **Unfixed Bugs**
 
 * There is an issue when running the game in mobile compatibility mode on Dev Tools. The following error is displayed in the console upon simulation of a touch event: Unable to preventDefault inside passive event listener due to target being treated as passive. Although I was able to fix this, when I ran the game on Apple touch devices, the jump function no longer worked so was not a viable solution.
