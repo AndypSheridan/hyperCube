@@ -18,8 +18,6 @@ let score = 0;
 /**
  * Game SFX
  */
-//let scoreSFX = new Audio("https://archive.org/download/classiccoin/classiccoin.wav");
-//scoreSFX.volume = 0;
 let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 jumpSFX.volume = 0;
 
@@ -384,8 +382,6 @@ function animate() {
         //User should score a point if this is the case
         if(isPastBlock(player, arrayBlock) && canScore){
             canScore = false;
-            //scoreSFX.currentTime = 0;
-            //scoreSFX.play();
             score++;
         }
         //Delete block that has left the screen
@@ -424,7 +420,6 @@ addEventListener("touchstart", e => {
             canScore = true;
             if (isPlaying) {
                 jumpSFX.play();
-                //scoreSFX.play();
             }
             player.jumpCounter = 0;
         }
