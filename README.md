@@ -282,7 +282,7 @@ The bug does not affect the playability or performance of the game or page in an
 ## **Deployment**
 I deployed the page on GitHub pages via the following procedure: -
 ​
-1. From the project's [repository](pageurl), go to the **Settings** tab.
+1. From the project's [repository](https://github.com/AndypSheridan/hyperCube), go to the **Settings** tab.
 2. From the left-hand menu, select the **Pages** tab.
 3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
 4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
