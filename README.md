@@ -320,22 +320,9 @@ The following software was used:
 ​
 ### **Content:**
 
-* Elements of the game use code written by YouTube user: Qixotl LFC https://www.youtube.com/watch?v=gnPekEXhkys
+* Core elements of the game use code written by YouTube user in the following video: Qixotl LFC https://www.youtube.com/watch?v=gnPekEXhkys
 
-* The background CSS is copied from Riley Pearce on CodePen: https://codepen.io/riley-pearce/pen/OJWPjZM?fbclid=IwAR2HwzINeVhFg7-YQvFDV8Teh-IH6akXO9RY3uMTapRobDt-R9fJ6-GIMkY
-
-* The game canvas background image was found on Freepik. The attribution is on the game screen. 
-The URL is "https://www.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_13924256.htm#query=game%20background&position=12&from_view=keyword"
-
-* The in-game music is freeware from Christopher at IndieGameMusic.com. 
-Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=5620
-
-* The favicon was generated at https://favicon.io/
-
-* The in-game is from open source digital library https://archive.org/
-Here is the link: 
-Jump SFX: https://archive.org/download/jump_20210424/jump.wav
-
+* Whilst the game is now very different, this video gave me a good platform to create a very basic jumping game.
 
 
 ### **Media:**
@@ -352,9 +339,13 @@ The URL is "https://www.freepik.com/free-vector/cosmic-background-alien-planet-d
 * The in-game music is freeware from Christopher at IndieGameMusic.com. 
 Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=5620
 
+* The favicon was generated using the online favicon generator at: https://favicon.io/
+
 
 ### **Honorable mentions**
 * Thank you to my mentor, Richard Wells, who gave a significant amount of his time to provide me with feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
+* Thanks to Code Institute for providing me with some basic knowledge of JavaScript.
+* Thanks also to Codecademy which I used alongside to help reinforce my knowledge.
 * Thanks to the Code Institute community on Slack who helped remind me that everyone has difficult days.
-* A huge thank you to my partner Jess who now knows more about HTML and CSS than she ever wanted to.
-* Finally, thanks to my two boys, Arthur and Elijah, who will be very disappointed when they find out I haven't been working on Mario Kart 9.
+* A huge thank you to my partner Jess who is better at the game than me.
+* Thanks to my oldest son Arthur who said the game was too hard, but learned that perseverance at these pays off in the end.
