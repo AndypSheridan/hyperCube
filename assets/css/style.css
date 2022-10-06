@@ -224,7 +224,7 @@ body {
   color: #FFF;
 }
 
-/* Styling for background stars animation */
+/* Styling for background stars animation copied from Riley Pearce on Codepen (see credits for link)*/
 .full-wh {
   position: absolute;
   top: 0px;
