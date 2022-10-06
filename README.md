@@ -281,7 +281,7 @@ The following bugs were identified during user testing:
 
 ## **Unfixed Bugs**
 
-* There is an issue when running the game in mobile compatibility mode on Dev Tools. The following error is displayed in the console upon simulation of a touch event: Unable to preventDefault inside passive event listener due to target being treated as passive. Although I was able to fix this, when I ran the game on Apple touch devices, the jump function no longer worked so was not a viable solution.
+* There is an issue when running the game in mobile compatibility mode on Dev Tools. The following error is logged to the console upon simulation of a touch event: "Unable to preventDefault inside passive event listener due to target being treated as passive." Although I was able to fix this, when I ran the game on Apple touch devices, the jump function no longer worked so it was not a viable solution.
 The bug does not affect the playability or performance of the game or page in any way, but this remains a minor bug for the time being.
 
 
