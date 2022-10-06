@@ -374,8 +374,8 @@ body {
 
 @media only screen and (max-width: 650px) {
   .splash {
-    align-content: center;
-    grid-row-gap: 1.2rem;
+    align-content: start;
+    grid-row-gap: 0.5rem;
   }
   
   #canvas {
