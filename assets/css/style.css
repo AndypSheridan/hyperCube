@@ -401,7 +401,7 @@ body {
   /* Media Queries 450px and smaller */
   /* In order for splash screen to display on all devices */
 
-@media only screen and (max-width: 450px){  
+@media only screen and (max-width: 415px){  
 
   .splash {
     align-content: start;
