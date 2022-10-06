@@ -213,7 +213,7 @@ There are a various areas with scope for future improvement. This project has be
 * ![hyperCube Lighthouse Report Mobile](assets/images/hypercube-lighthouse-mobile.png)
 
 * The page performs well.
-* The desktop score performance score is 99% and the mobile score is 85%.
+* The desktop score performance score is 99% and the mobile score is 86%.
 * The game scores 100% in terms of accessibility, best practices and SEO.
 
 ​
