@@ -324,7 +324,7 @@ The following software was used:
 
 * The background CSS is copied from Riley Pearce on CodePen: https://codepen.io/riley-pearce/pen/OJWPjZM?fbclid=IwAR2HwzINeVhFg7-YQvFDV8Teh-IH6akXO9RY3uMTapRobDt-R9fJ6-GIMkY
 
-* The background image was found on Freepik. The attribution is on the game screen. 
+* The game canvas background image was found on Freepik. The attribution is on the game screen. 
 The URL is "https://www.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_13924256.htm#query=game%20background&position=12&from_view=keyword"
 
 * The in-game music is freeware from Christopher at IndieGameMusic.com. 
@@ -332,24 +332,25 @@ Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=56
 
 * The favicon was generated at https://favicon.io/
 
-* The in-game sound effects are both from open source digital library https://archive.org/
-Here are the links: 
+* The in-game is from open source digital library https://archive.org/
+Here is the link: 
 Jump SFX: https://archive.org/download/jump_20210424/jump.wav
-Score SFX: https://archive.org/download/classiccoin/classiccoin.wav
+
 
 
 ### **Media:**
 
-* 
-​
-* The following images were used, all acquired from public domain image site Pexels.com:
+* The background CSS is copied from Riley Pearce on CodePen: https://codepen.io/riley-pearce/pen/OJWPjZM?fbclid=IwAR2HwzINeVhFg7-YQvFDV8Teh-IH6akXO9RY3uMTapRobDt-R9fJ6-GIMkY
 
-* https://images.pexels.com/photos/5069180/pexels-photo-5069180.jpeg?auto=compress&cs=tinysrgb&w=800
-* https://images.pexels.com/photos/1277397/pexels-photo-1277397.jpeg?auto=compress&cs=tinysrgb&w=800
-* https://images.pexels.com/photos/5741044/pexels-photo-5741044.jpeg?auto=compress&cs=tinysrgb&w=800
-* https://images.pexels.com/photos/6292759/pexels-photo-6292759.jpeg?auto=compress&cs=tinysrgb&w=800
-* https://images.pexels.com/photos/8224730/pexels-photo-8224730.jpeg?auto=compress&cs=tinysrgb&w=800
-* https://images.pexels.com/photos/2339377/pexels-photo-2339377.jpeg?auto=compress&cs=tinysrgb&w=800
+* The in-game is from open source digital library https://archive.org/
+Here is the link: 
+Jump SFX: https://archive.org/download/jump_20210424/jump.wav
+
+* The game canvas background image was found on Freepik. The attribution is on the game screen. 
+The URL is "https://www.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_13924256.htm#query=game%20background&position=12&from_view=keyword"
+
+* The in-game music is freeware from Christopher at IndieGameMusic.com. 
+Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=5620
 
 
 ### **Honorable mentions**
