@@ -373,10 +373,6 @@ body {
 /* Media Queries 650px and smaller */
 
 @media only screen and (max-width: 650px) {
-  .splash {
-    align-content: start;
-    grid-row-gap: 0.5rem;
-  }
   
   #canvas {
     width: 100%;
@@ -401,3 +397,15 @@ body {
     font-size: 1rem;
     }
   }
+
+  /* Media Queries 450px and smaller */
+  /* In order for splash screen to display on all devices */
+
+@media only screen and (max-width: 450px){  
+
+  .splash {
+    align-content: start;
+    grid-row-gap: 0.5rem;
+    font-size: 0.6rem;
+  }
+}
