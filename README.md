@@ -50,7 +50,7 @@ There is a high score table which the user can add their name to; it stores the 
 <br>
 
 #### **Target Audiences:**
-* People who are like casual gaming​.
+* People who like casual gaming​.
 * People who are looking for a simple yet challenging endless jumping game.
 * People looking for a browser-based game.
 * Aspiring developers looking for clearly-written JavaScript code and simple but effective logic.
@@ -264,6 +264,12 @@ The following bugs were identified during user testing:
 * 🐞 - The game was initially too hard.
 * ⚒️ - The speed of each block was too fast.
 * ✅ - Slowed the starting speed of the blocks and set them to move incrementally faster.
+
+<br>
+
+* 🐞 - The skip button on the splash screen would be hidden by the browser bar on smaller mobile devices. This meant users who had played the game multiple occasiosn would have to wait for the countdown to finish.
+* ⚒️ - Whilst the page is responsive it dodn't take into account the browser bar.
+* ✅ - Adjusted the CSS grid spacing to take into account screen sizes of 415px and smaller which accounts for mobile devices.
 
 <br>
 
