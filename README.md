@@ -333,6 +333,8 @@ The following software was used:
 
 * Whilst the game is now very different, this video gave me a good platform to create a very basic jumping game. Code has been attributed in the JavaScript file.
 
+* The leaderboard code is from the website Developer Drive: https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
+
 
 ### **Media:**
 

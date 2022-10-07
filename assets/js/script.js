@@ -1,3 +1,6 @@
+/**
+ * Declare global variables
+ */
 const musicButtons = document.getElementsByClassName("musicToggle");
 const cardScore = document.getElementById("card-score");
 const myAudio = document.getElementById("myAudio");
@@ -24,6 +27,7 @@ jumpSFX.volume = 0;
 
 /**
  * Game Music
+ * See credits for further information
  * Toggle music on and off
  */
 for(let button of musicButtons) {
@@ -86,6 +90,7 @@ skipIntro.addEventListener('click', function(e) {
 
 /**
  * Leaderboard code
+ * Taken from Developer Drive: https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
  */  
 function checkScore() {
     let worstScore = 0;
