@@ -4,7 +4,7 @@
 hyperCube is an endless, side-scrolling, jumping game in which the player has to jump a series of randomly spaced cubes or 'monoliths' that slide towards the player at increasing speed. The synopsis for the game is as follows: 
 "Whilst on a routine patrol at the edge of the galaxy, your hyperdrive malfunctioned, rupturing space and time. You have been pulled into an alternate 2D reality where the rules of our universe no longer apply. After crashing on a deserted world, the mysterious laws of this place have transformed your human body into a hyperCube. Stars drift towards the heavens and menacing black monoliths are drawn towards you with increasing speed. If there is any hope of escape from this place, you must first survive by jumping the monoliths."
 
-The synopsis is displayed on a splash screen which counts down from 20 before showing the game page. Alternatively the user can skip the splash screen using the 'skip' button.
+The synopsis is displayed on a splash screen which counts down from 20 before fading to the game page. Alternatively the user can skip the splash screen using the 'skip' button.
 
 The game has sound effects and music (see credits for details) which can be toggled on or off. The default setting is no sound or music. 
 
@@ -119,6 +119,7 @@ The game page uses the same radial gradient but there is animated effect of star
 * The favicon is a small image that displays in the browser tab. 
 * The intention is to enhance the user experience for those who have multiple tabs open and cannot read the text in the tabs.
 * The favicon is a simple lower case 'h' and upper case 'C' to reflect the styling of 'hyperCube' in the title of the game. The font color is the same (#DADBD0) as the one used on the splash and game screens, whilst the purple is found in the game canvas background.
+* For consistency, the font used is IBM Plex Mono.
 
 ![Screenshot of favicon](assets/images/hyperCube-favicon-screenshot.png)
 ​
@@ -162,7 +163,7 @@ The game page uses the same radial gradient but there is animated effect of star
 * The player character jumps through a press of the spacebar or a screen tap on mobile devices. Upon jumping the player character executes a perfect 360 degree jump.
 * For every 10 blocks that are successfully jumped, the speed of the black monoliths increases.
 * The player scores a point for every obsatcle that is successfully cleared.
-* As it is an endless jumper, the goal is to score the highest on the leaderboard. 
+* As it is an endless jumper, the goal is to score highest on the leaderboard. 
 * If the player achieves a top 5 high score they are prompted to enter their name in the leaderboard.
 
 <br>
@@ -188,6 +189,7 @@ There are a various areas with scope for future improvement. This project has be
 * User testing was conducted on the following devices: Apple iPhone 12, Apple iPad Air 2021, Apple Macbook Air 2021, Apple MacBook Pro 2021. 
 * As I was limited to Apple devices only I sent the link to various friends and colleagues so they could check responsiveness on further devices including Windows desktop PCs, Amazon tablets and Samsung Galaxy S12. In each case, the pages responded as expected.
 * Using CSS grid was hugely helpful when it came to the splash screen and it resizes well regardless of the device.
+* When resizing the window using Chrome Dev Tools, from 415px and narrower, it may appear that the splash screen becomes crowded with a lot of space at the bottom of the screen. This is necessary to take into account the browser bar on mobile devices. 
 
 * **Splash Screen**
 
