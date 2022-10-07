@@ -17,6 +17,7 @@ let score = 0;
 
 /**
  * Game SFX
+ * See credits for further information
  */
 let jumpSFX = new Audio("https://archive.org/download/jump_20210424/jump.wav");
 jumpSFX.volume = 0;

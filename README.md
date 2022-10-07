@@ -171,7 +171,7 @@ The game page uses the same radial gradient but there is animated effect of star
 ​
 ## **Future-Enhancements**
 ​
-There are a various areas with scope for future improvement. This project has been fun and challenging and I will continue to try to add the following features in my own time:
+There are a several areas with scope for future improvement. This project has been fun and challenging and I will continue to try to add the following features in my own time:
 ​
 * Creating a sprite and sprite sheet for the player character.
 * Additional sound effects.
@@ -203,10 +203,10 @@ There are a various areas with scope for future improvement. This project has be
 
 **Functionality**
 
-* Each feature was user-tested numerous times. All links were clicked and images checked.
-* On desktop, all buttons and controls function perfectly. The music and SFX toggle on and off as expected. 
-* The javascript functions as expected regardless on desktop. 
-* The skip button fucntions perfectly regardless of the device.
+* Each feature was user-tested numerous times. All buttons or links were clicked or tapped and images checked.
+* On desktop and mobile, all buttons and controls function perfectly. The music and SFX toggle on and off as expected. 
+* The javascript functions as intended on desktop and mobile. 
+* The skip button functions perfectly regardless of the device.
 * The animated background functions well on desktop and mobile.
 * The game runs as expected on desktop and mobile. 
 * The leaderboard functions as intended on desktop and mobile. 
@@ -230,7 +230,7 @@ There are a various areas with scope for future improvement. This project has be
 
 * ![CSS Validation Screenshot](assets/images/hypercube-css-validation.png)
 
-* JavaScript Validation using jShint - passed validation. The report stated that there are two unused variables but they are integral to the game and called from the DOM. There are two warnings which refer to ternary expressions.
+* JavaScript Validation using jShint - passed validation with no major issues. The report states that there are two unused variables but they are integral to the game and called from the DOM. There are two warnings which refer to ternary expressions.
 
 * ![JavaScript code report](assets/images/hypercube-jshint-validation.png)
 
@@ -352,9 +352,9 @@ Here is the link to the file: https://www.indiegamemusic.com/viewtrack.php?id=56
 
 
 ### **Honorable mentions**
-* Thank you to my mentor, Richard Wells, who gave a significant amount of his time to provide me with feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
+* Thank you to my mentor, Richard Wells, who gave a significant amount of his time to provide me with help, feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
 * Thanks to Code Institute for providing me with some basic knowledge of JavaScript.
 * Thanks also to Codecademy which I used alongside to help reinforce my knowledge.
 * Thanks to the Code Institute community on Slack who helped remind me that everyone has difficult days.
 * A huge thank you to my partner Jess who is better at the game than me.
-* Thanks to my oldest son Arthur who said the game was too hard, but learned that perseverance at these pays off in the end!
+* Thanks to my oldest son Arthur who said the game was too hard to begin with, but learned that perseverance pays off in the end!
