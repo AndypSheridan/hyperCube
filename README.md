@@ -164,7 +164,7 @@ The game page uses the same radial gradient but there is animated effect of star
 * For every 10 blocks that are successfully jumped, the speed of the black monoliths increases.
 * The player scores a point for every obsatcle that is successfully cleared.
 * As it is an endless jumper, the goal is to score highest on the leaderboard. 
-* If the player achieves a top 5 high score they are prompted to enter their name in the leaderboard.
+* If the player achieves a top 5 high score they are prompted to enter their name in the leaderboard. Alternatively, they can click cancel which logs 'Anonymous' to the leaderboard.
 
 <br>
 
