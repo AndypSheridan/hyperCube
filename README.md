@@ -180,6 +180,7 @@ There are a various areas with scope for future improvement. This project has be
 * Platforms to jump on to.
 * The abiity to collect an item which slows down the obstacles temporarily.
 * The ability to move left and right.
+* Adding a parallax background.
 ​
 ## **Testing Phase**
 ​
