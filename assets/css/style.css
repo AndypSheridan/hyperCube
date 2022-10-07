@@ -1,4 +1,4 @@
-/* Google Font */
+/* Google Fonts 'IBM Plex Mono, monospace' */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 /* Styling for splash screen */
@@ -44,6 +44,7 @@
   }
 }
 
+/* Styling for body */
 body {
     background: radial-gradient(ellipse at bottom, #758CDE 0%, #0C0D13 100%);
     color: #fff;
@@ -399,7 +400,7 @@ body {
   }
 
   /* Media Queries 450px and smaller */
-  /* In order for splash screen to display on all devices */
+  /* In order for splash screen to display correctly on all devices */
 
 @media only screen and (max-width: 415px){  
 
