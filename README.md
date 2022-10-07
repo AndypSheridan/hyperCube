@@ -283,7 +283,7 @@ The following bugs were identified during user testing:
 
 * There is an issue when running the game in mobile compatibility mode on Dev Tools. The following error is logged to the console upon simulation of a touch event: "Unable to preventDefault inside passive event listener due to target being treated as passive." Although I was able to fix this, when I ran the game on Apple touch devices, the jump function no longer worked so it was not a viable solution.
 The bug does not affect the playability or performance of the game or page in any way, but this remains a minor bug for the time being.
-
+* One potential issue is on displays running at 120hz: the game works best at 60hz but will run faster if the screen refresh rate is at 120hz or higher. This isn't an issue for the majority of devices but it is important to note. Given more time, this is something I would investigate further.
 
 ## **Deployment**
 I deployed the page on GitHub pages via the following procedure: -
